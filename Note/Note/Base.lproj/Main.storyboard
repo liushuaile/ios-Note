@@ -143,17 +143,20 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="1QD-WN-Ezz" kind="show" identifier="GotoDownloadDetail" id="D92-yn-Q1r"/>
+                        <segue destination="1QD-WN-Ezz" kind="show" identifier="GotoAFNetworkingOfflineResumeDownloadFileViewController" id="D92-yn-Q1r"/>
+                        <segue destination="hV9-Gi-c4X" kind="show" identifier="GotoNSURLSessionOfflineResumeDownloadFileViewController" id="7Ny-Os-jnL"/>
+                        <segue destination="XHn-sm-Lmq" kind="show" identifier="GotoNSURLSessionBlockDownloadFileViewController" id="m1q-0X-Z5X"/>
+                        <segue destination="lff-cc-4KX" kind="show" identifier="GotoNSURLSessionDelegateDownloadFileViewController" id="IbB-xE-i8c"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA2-ZW-XAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1887" y="1102"/>
         </scene>
-        <!--File Download Detail View Controller-->
+        <!--Networking Offline Resume Download File View Controller-->
         <scene sceneID="sZa-4r-bNu">
             <objects>
-                <viewController id="1QD-WN-Ezz" customClass="FileDownloadDetailViewController" sceneMemberID="viewController">
+                <viewController id="1QD-WN-Ezz" customClass="AFNetworkingOfflineResumeDownloadFileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y32-s7-psp"/>
                         <viewControllerLayoutGuide type="bottom" id="wHo-QR-aCj"/>
@@ -210,7 +213,172 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uum-Zq-Tay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="1101"/>
+            <point key="canvasLocation" x="2993" y="1154"/>
+        </scene>
+        <!--URL Session Offline Resume Download File View Controller-->
+        <scene sceneID="KVF-Kx-3uc">
+            <objects>
+                <viewController id="hV9-Gi-c4X" customClass="NSURLSessionOfflineResumeDownloadFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HEM-51-bxK"/>
+                        <viewControllerLayoutGuide type="bottom" id="G39-Wx-70X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1PQ-rT-jaH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前下载进度:00.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58Z-j6-iS5">
+                                <rect key="frame" x="42" y="237" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vX0-PO-uQj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG6-Uo-2Qs">
+                                <rect key="frame" x="164" y="331" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Pqz-sf-XWr"/>
+                                    <constraint firstAttribute="height" constant="50" id="mvx-R0-GUY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="play"/>
+                                <state key="selected" backgroundImage="stop"/>
+                                <connections>
+                                    <action selector="OfflinResumeDownloadBtnClicked:" destination="hV9-Gi-c4X" eventType="touchUpInside" id="9dM-x9-J3Y"/>
+                                    <action selector="OfflinResumeDownloadBtnClicked:" destination="1QD-WN-Ezz" eventType="touchUpInside" id="smV-s0-PkJ"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OX2-K6-mKm">
+                                <rect key="frame" x="42" y="188" width="295" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="3fr-75-Nym"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OX2-K6-mKm" secondAttribute="trailing" constant="22" id="0Y6-mE-mgS"/>
+                            <constraint firstItem="hG6-Uo-2Qs" firstAttribute="top" secondItem="58Z-j6-iS5" secondAttribute="bottom" constant="73" id="6uP-GR-b61"/>
+                            <constraint firstItem="OX2-K6-mKm" firstAttribute="trailing" secondItem="58Z-j6-iS5" secondAttribute="trailing" id="PTF-ai-ozk"/>
+                            <constraint firstItem="OX2-K6-mKm" firstAttribute="leading" secondItem="1PQ-rT-jaH" secondAttribute="leadingMargin" constant="26" id="R07-x6-GWC"/>
+                            <constraint firstItem="OX2-K6-mKm" firstAttribute="leading" secondItem="58Z-j6-iS5" secondAttribute="leading" id="V4J-Xl-yBO"/>
+                            <constraint firstItem="OX2-K6-mKm" firstAttribute="top" secondItem="HEM-51-bxK" secondAttribute="bottom" constant="124" id="Ygz-gD-dJY"/>
+                            <constraint firstItem="58Z-j6-iS5" firstAttribute="top" secondItem="OX2-K6-mKm" secondAttribute="bottom" constant="47" id="cqU-tV-yzl"/>
+                            <constraint firstItem="OX2-K6-mKm" firstAttribute="centerX" secondItem="hG6-Uo-2Qs" secondAttribute="centerX" id="vcf-PN-GaY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qCX-1X-nN0"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="58Z-j6-iS5" id="0ge-rQ-6cr"/>
+                        <outlet property="progressView" destination="OX2-K6-mKm" id="paz-Bh-iYs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmx-Aw-cE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="1948"/>
+        </scene>
+        <!--URL Session Block Download File View Controller-->
+        <scene sceneID="9pk-co-5yd">
+            <objects>
+                <viewController id="XHn-sm-Lmq" customClass="NSURLSessionBlockDownloadFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0V6-aH-Ulg"/>
+                        <viewControllerLayoutGuide type="bottom" id="pOA-Om-rXx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BF3-lh-5e6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jwU-ab-DKo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ZOW-4L-84B"/>
+                                    <constraint firstAttribute="height" constant="559" id="fPx-ps-ykA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jwU-ab-DKo" firstAttribute="leading" secondItem="BF3-lh-5e6" secondAttribute="leading" id="A0j-he-9B5"/>
+                            <constraint firstItem="jwU-ab-DKo" firstAttribute="top" secondItem="0V6-aH-Ulg" secondAttribute="bottom" id="son-xr-yiR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JYF-Ag-Zwm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Sc5-3U-W09">
+                            <connections>
+                                <action selector="downloadBtnClicked:" destination="XHn-sm-Lmq" id="uWI-cC-p3W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="jwU-ab-DKo" id="ZXy-g6-Es3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crp-hd-VzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992.8000000000002" y="2728.785607196402"/>
+        </scene>
+        <!--URL Session Delegate Download File View Controller-->
+        <scene sceneID="AuT-sh-Kwj">
+            <objects>
+                <viewController id="lff-cc-4KX" customClass="NSURLSessionDelegateDownloadFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u9F-ta-d7i"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZLR-Sp-9Eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c1F-J9-roI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g7R-tA-Kae">
+                                <rect key="frame" x="40" y="212" width="295" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="agM-hh-JcY"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前下载进度:00.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlY-WF-Tgd">
+                                <rect key="frame" x="40" y="234" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gX0-V9-Z0u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-s2-YPm">
+                                <rect key="frame" x="157" y="295" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="DWD-yP-cL0"/>
+                                    <constraint firstAttribute="height" constant="30" id="EMD-3Z-5oX"/>
+                                </constraints>
+                                <state key="normal" title="开始下载"/>
+                                <connections>
+                                    <action selector="downloadBtnClicked:" destination="lff-cc-4KX" eventType="touchUpInside" id="pkn-8O-8No"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="centerX" secondItem="c1F-J9-roI" secondAttribute="centerX" id="6YN-Qe-8dy"/>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="leading" secondItem="xlY-WF-Tgd" secondAttribute="leading" id="7dh-pV-Vy6"/>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="top" secondItem="u9F-ta-d7i" secondAttribute="bottom" constant="148" id="8QA-xr-mZE"/>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="centerX" secondItem="pzV-s2-YPm" secondAttribute="centerX" id="Agp-bz-J82"/>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="trailing" secondItem="xlY-WF-Tgd" secondAttribute="trailing" id="Cfs-bj-RYX"/>
+                            <constraint firstItem="xlY-WF-Tgd" firstAttribute="top" secondItem="g7R-tA-Kae" secondAttribute="bottom" constant="20" id="RUX-cH-Oe0"/>
+                            <constraint firstItem="g7R-tA-Kae" firstAttribute="leading" secondItem="c1F-J9-roI" secondAttribute="leadingMargin" constant="24" id="YhV-6n-TKJ"/>
+                            <constraint firstItem="pzV-s2-YPm" firstAttribute="top" secondItem="xlY-WF-Tgd" secondAttribute="bottom" constant="40" id="fDp-OT-jQ1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nXZ-Gc-Obi"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="xlY-WF-Tgd" id="bFh-AK-Fqx"/>
+                        <outlet property="progressView" destination="g7R-tA-Kae" id="jj0-Jb-6RP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHH-7F-jCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="3602"/>
         </scene>
         <!--GCD-->
         <scene sceneID="hZG-O7-Lnz">

@@ -18,7 +18,7 @@ static NSString * const cellReuseIdentifier = @"cell";
 
 @implementation GCDTableViewController
 
-#pragma mark- lifestyle
+#pragma mark- Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     

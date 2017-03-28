@@ -1,15 +1,15 @@
 //
-//  FileDownloadDetailViewController.m
+//  AFNetworkingOfflineResumeDownloadFileViewController.m
 //  Note
 //
 //  Created by SL on 28/03/2017.
 //  Copyright © 2017 Sam. All rights reserved.
 //
 
-#import "FileDownloadDetailViewController.h"
+#import "AFNetworkingOfflineResumeDownloadFileViewController.h"
 #import <AFNetworking.h>
 
-@interface FileDownloadDetailViewController ()
+@interface AFNetworkingOfflineResumeDownloadFileViewController ()
 /** 下载进度条 */
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 /** 下载进度条Label */
@@ -30,12 +30,11 @@
 
 @end
 
-@implementation FileDownloadDetailViewController
+@implementation AFNetworkingOfflineResumeDownloadFileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@",self.style);
 }
 
 - (void)didReceiveMemoryWarning {

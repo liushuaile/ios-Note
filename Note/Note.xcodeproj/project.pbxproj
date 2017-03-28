@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A462D001E88BD1D004139A6 /* TVDataSourceAndDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462CFF1E88BD1D004139A6 /* TVDataSourceAndDelegate.m */; };
 		5A462D7D1E8A05AB004139A6 /* GCDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D7C1E8A05AB004139A6 /* GCDTableViewController.m */; };
 		5A462D841E8A076F004139A6 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D831E8A076F004139A6 /* CoreDataTableViewController.m */; };
 		5A462D881E8A111E004139A6 /* LSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D871E8A111E004139A6 /* LSAlertController.m */; };
@@ -18,7 +17,11 @@
 		5A462DA01E8A3AF1004139A6 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D9D1E8A3AF1004139A6 /* Person+CoreDataClass.m */; };
 		5A462DA11E8A3AF1004139A6 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D9F1E8A3AF1004139A6 /* Person+CoreDataProperties.m */; };
 		5A462DA51E8A625C004139A6 /* FileDownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DA41E8A625C004139A6 /* FileDownloadTableViewController.m */; };
-		5A462DA81E8A6AE7004139A6 /* FileDownloadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DA71E8A6AE7004139A6 /* FileDownloadDetailViewController.m */; };
+		5A462DA81E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DA71E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m */; };
+		5A462DAB1E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DAA1E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.m */; };
+		5A462DB61E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DB31E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m */; };
+		5A462DB71E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DB51E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.m */; };
+		5A462DBA1E8AD6DD004139A6 /* TVDataSourceAndDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462DB91E8AD6DD004139A6 /* TVDataSourceAndDelegate.m */; };
 		5AB0A14B1E8504B000105D17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0A14A1E8504B000105D17 /* main.m */; };
 		5AB0A14E1E8504B000105D17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0A14D1E8504B000105D17 /* AppDelegate.m */; };
 		5AB0A1511E8504B000105D17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0A1501E8504B000105D17 /* ViewController.m */; };
@@ -32,8 +35,6 @@
 /* Begin PBXFileReference section */
 		2D22BB26FDD1BE6D9FBA7E35 /* Pods-Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.debug.xcconfig"; sourceTree = "<group>"; };
 		2EE9C44B493552A6D8395E72 /* Pods-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.release.xcconfig"; sourceTree = "<group>"; };
-		5A462CFE1E88BD1D004139A6 /* TVDataSourceAndDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVDataSourceAndDelegate.h; sourceTree = "<group>"; };
-		5A462CFF1E88BD1D004139A6 /* TVDataSourceAndDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVDataSourceAndDelegate.m; sourceTree = "<group>"; };
 		5A462D7B1E8A05AB004139A6 /* GCDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDTableViewController.h; path = GCD/GCDTableViewController.h; sourceTree = "<group>"; };
 		5A462D7C1E8A05AB004139A6 /* GCDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDTableViewController.m; path = GCD/GCDTableViewController.m; sourceTree = "<group>"; };
 		5A462D821E8A076F004139A6 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = CoreData/CoreDataTableViewController.h; sourceTree = "<group>"; };
@@ -52,8 +53,16 @@
 		5A462D9F1E8A3AF1004139A6 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+CoreDataProperties.m"; path = "CoreData/Model/Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		5A462DA31E8A625C004139A6 /* FileDownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileDownloadTableViewController.h; path = FileDownload/FileDownloadTableViewController.h; sourceTree = "<group>"; };
 		5A462DA41E8A625C004139A6 /* FileDownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileDownloadTableViewController.m; path = FileDownload/FileDownloadTableViewController.m; sourceTree = "<group>"; };
-		5A462DA61E8A6AE7004139A6 /* FileDownloadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileDownloadDetailViewController.h; path = FileDownload/FileDownloadDetailViewController.h; sourceTree = "<group>"; };
-		5A462DA71E8A6AE7004139A6 /* FileDownloadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileDownloadDetailViewController.m; path = FileDownload/FileDownloadDetailViewController.m; sourceTree = "<group>"; };
+		5A462DA61E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkingOfflineResumeDownloadFileViewController.h; path = FileDownload/AFNetworkingOfflineResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		5A462DA71E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkingOfflineResumeDownloadFileViewController.m; path = FileDownload/AFNetworkingOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		5A462DA91E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSURLSessionOfflineResumeDownloadFileViewController.h; path = FileDownload/NSURLSessionOfflineResumeDownloadFileViewController.h; sourceTree = "<group>"; };
+		5A462DAA1E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLSessionOfflineResumeDownloadFileViewController.m; path = FileDownload/NSURLSessionOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
+		5A462DB21E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSURLSessionBlockDownloadFileViewController.h; path = FileDownload/NSURLSessionBlockDownloadFileViewController.h; sourceTree = "<group>"; };
+		5A462DB31E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLSessionBlockDownloadFileViewController.m; path = FileDownload/NSURLSessionBlockDownloadFileViewController.m; sourceTree = "<group>"; };
+		5A462DB41E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSURLSessionDelegateDownloadFileViewController.h; path = FileDownload/NSURLSessionDelegateDownloadFileViewController.h; sourceTree = "<group>"; };
+		5A462DB51E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLSessionDelegateDownloadFileViewController.m; path = FileDownload/NSURLSessionDelegateDownloadFileViewController.m; sourceTree = "<group>"; };
+		5A462DB81E8AD6DD004139A6 /* TVDataSourceAndDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVDataSourceAndDelegate.h; path = Delegate/TVDataSourceAndDelegate.h; sourceTree = "<group>"; };
+		5A462DB91E8AD6DD004139A6 /* TVDataSourceAndDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVDataSourceAndDelegate.m; path = Delegate/TVDataSourceAndDelegate.m; sourceTree = "<group>"; };
 		5AB0A1461E8504B000105D17 /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB0A14A1E8504B000105D17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5AB0A14C1E8504B000105D17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,8 +103,8 @@
 		5A462D011E88DEA6004139A6 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				5A462CFE1E88BD1D004139A6 /* TVDataSourceAndDelegate.h */,
-				5A462CFF1E88BD1D004139A6 /* TVDataSourceAndDelegate.m */,
+				5A462DB81E8AD6DD004139A6 /* TVDataSourceAndDelegate.h */,
+				5A462DB91E8AD6DD004139A6 /* TVDataSourceAndDelegate.m */,
 			);
 			name = Delegate;
 			sourceTree = "<group>";
@@ -158,8 +167,14 @@
 			children = (
 				5A462DA31E8A625C004139A6 /* FileDownloadTableViewController.h */,
 				5A462DA41E8A625C004139A6 /* FileDownloadTableViewController.m */,
-				5A462DA61E8A6AE7004139A6 /* FileDownloadDetailViewController.h */,
-				5A462DA71E8A6AE7004139A6 /* FileDownloadDetailViewController.m */,
+				5A462DA61E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.h */,
+				5A462DA71E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m */,
+				5A462DA91E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.h */,
+				5A462DAA1E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.m */,
+				5A462DB21E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.h */,
+				5A462DB31E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m */,
+				5A462DB41E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.h */,
+				5A462DB51E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.m */,
 			);
 			name = FileDownload;
 			sourceTree = "<group>";
@@ -336,19 +351,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A462DA01E8A3AF1004139A6 /* Person+CoreDataClass.m in Sources */,
+				5A462DB71E8ACF03004139A6 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */,
 				5AB0A1511E8504B000105D17 /* ViewController.m in Sources */,
 				5A462D881E8A111E004139A6 /* LSAlertController.m in Sources */,
-				5A462D001E88BD1D004139A6 /* TVDataSourceAndDelegate.m in Sources */,
+				5A462DAB1E8ACA80004139A6 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */,
 				5A462D8B1E8A2D96004139A6 /* GCDMethods.m in Sources */,
 				5A462D841E8A076F004139A6 /* CoreDataTableViewController.m in Sources */,
 				5A462D7D1E8A05AB004139A6 /* GCDTableViewController.m in Sources */,
 				5AB0A14E1E8504B000105D17 /* AppDelegate.m in Sources */,
 				5A462DA11E8A3AF1004139A6 /* Person+CoreDataProperties.m in Sources */,
 				5A462D911E8A3313004139A6 /* CoreDataManager.m in Sources */,
+				5A462DBA1E8AD6DD004139A6 /* TVDataSourceAndDelegate.m in Sources */,
 				5A462D8E1E8A32B0004139A6 /* Model.xcdatamodeld in Sources */,
 				5AB0A14B1E8504B000105D17 /* main.m in Sources */,
-				5A462DA81E8A6AE7004139A6 /* FileDownloadDetailViewController.m in Sources */,
+				5A462DA81E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
 				5AB0A1621E8504D500105D17 /* Notes.m in Sources */,
+				5A462DB61E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
 				5A462DA51E8A625C004139A6 /* FileDownloadTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

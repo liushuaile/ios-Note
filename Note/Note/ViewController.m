@@ -43,7 +43,7 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD",@"CoreData",@"FileDownload", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"JavaScriptCore", @"RunTime", nil];
     }
     return _dataArray;
 }

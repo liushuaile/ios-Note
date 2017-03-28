@@ -34,15 +34,15 @@ static NSString * const cellIdentifier = @"cell";
 #pragma mark - Custom Accessors
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking断点下载（支持离线）", nil];
+        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking断点下载（支持离线）", @"使用NSURLSession断点下载（支持离线）", @"使用NSURLSession的block方法下载文件", @"使用NSURLSession的delegate方法下载文件", nil];
     }
     return _dataArray;
 }
 
 #pragma mark- Methods
 - (IBAction)redoSender:(id)sender {
+    //清理下载文件
     NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"QQ_V5.4.0.dmg"];
-    // 创建一个空的文件到沙盒中
     NSFileManager *FM = [NSFileManager defaultManager];
     BOOL b_exist = [FM fileExistsAtPath:path];
     if (b_exist) {
@@ -52,6 +52,20 @@ static NSString * const cellIdentifier = @"cell";
             NSLog(@"%@",error.userInfo);
         } else {
             NSLog(@"Remove File at: %@",path);
+        }
+    }
+    
+    //清理下载图片
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *imagePath = [documentsPath stringByAppendingPathComponent:@"image.jpg"];
+    b_exist = [FM fileExistsAtPath:imagePath];
+    if (b_exist) {
+        NSError *error = nil;
+        BOOL b_remove = [FM removeItemAtPath:imagePath error:&error];
+        if (!b_remove) {
+            NSLog(@"%@",error.userInfo);
+        } else {
+            NSLog(@"Remove File at: %@",imagePath);
         }
     }
 }
@@ -86,10 +100,16 @@ static NSString * const cellIdentifier = @"cell";
     NSInteger row = indexPath.row;
     switch (row) {
         case 0:
-            [self performSegueWithIdentifier:@"GotoDownloadDetail" sender:@"style1"];
+            [self performSegueWithIdentifier:@"GotoAFNetworkingOfflineResumeDownloadFileViewController" sender:@"AFNetworking断点下载（支持离线）"];
             break;
         case 1:
-            [self performSegueWithIdentifier:@"GotoDownloadDetail" sender:@"style2"];
+            [self performSegueWithIdentifier:@"GotoNSURLSessionOfflineResumeDownloadFileViewController" sender:@"NSURLSession断点下载（支持离线）"];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"GotoNSURLSessionBlockDownloadFileViewController" sender:@"使用NSURLSession的block方法下载文件"];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"GotoNSURLSessionDelegateDownloadFileViewController" sender:@"使用NSURLSession的delegate方法下载文件"];
             break;
             
         default:
@@ -139,12 +159,16 @@ static NSString * const cellIdentifier = @"cell";
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 #if 1
-    if ([segue.identifier  isEqual: @"GotoDownloadDetail"]) {
+    /*
+     此处属于固定业务流程，不需要判断
+    if ([segue.identifier  isEqual: @"GotoAFNetworkingOfflineResumeDownloadFileViewController"]) {
         // 需要执行的代码
-        id viewcontroller = [segue destinationViewController];
-        [viewcontroller setValue:@"下载" forKey:@"title"];
-        [viewcontroller setValue:sender forKey:@"style"];
     }
+     */
+    
+    id viewcontroller = [segue destinationViewController];
+    [viewcontroller setValue:sender forKey:@"title"];
+    
 #else
     if ([segue.destinationViewController isKindOfClass:[IndexTableViewController class]]) {
         //  执行代码
