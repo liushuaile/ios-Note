@@ -59,6 +59,7 @@
                         <outlet property="tableView" destination="fWA-Jd-yXV" id="hyW-5m-7fn"/>
                         <segue destination="eW5-8x-Ixu" kind="show" identifier="GotoGCD" id="Xt6-EQ-F05"/>
                         <segue destination="UUn-bp-22U" kind="show" identifier="GotoCoreData" id="UN7-Fc-Jcg"/>
+                        <segue destination="RaF-eL-n8q" kind="show" identifier="GotoFileDownload" id="Hpl-uT-DZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,7 +98,7 @@
                             <outlet property="delegate" destination="UUn-bp-22U" id="Ykt-iR-Cja"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xD6-YU-UTt">
+                    <navigationItem key="navigationItem" title="CoreData" id="xD6-YU-UTt">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="GCe-uD-ruy">
                             <connections>
                                 <action selector="addModel:" destination="UUn-bp-22U" id="Ay8-YP-Blc"/>
@@ -108,6 +109,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBU-u8-ctF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1883" y="415"/>
+        </scene>
+        <!--FileDownload-->
+        <scene sceneID="hzD-2R-FPb">
+            <objects>
+                <tableViewController title="FileDownload" id="RaF-eL-n8q" customClass="FileDownloadTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tyb-zE-cAP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="hlr-yV-jHh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hlr-yV-jHh" id="40k-e4-amp">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RaF-eL-n8q" id="apB-BX-Pkh"/>
+                            <outlet property="delegate" destination="RaF-eL-n8q" id="G4Z-BM-5Df"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="FileDownload" id="WEA-CI-uyx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="redo" id="KeH-ge-v3a"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="1QD-WN-Ezz" kind="show" identifier="GotoDownloadDetail" id="D92-yn-Q1r"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GA2-ZW-XAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="1102"/>
+        </scene>
+        <!--File Download Detail View Controller-->
+        <scene sceneID="sZa-4r-bNu">
+            <objects>
+                <viewController id="1QD-WN-Ezz" customClass="FileDownloadDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y32-s7-psp"/>
+                        <viewControllerLayoutGuide type="bottom" id="wHo-QR-aCj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CU7-Cz-Pfu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ej9-BC-HZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uum-Zq-Tay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="1101"/>
         </scene>
         <!--GCD-->
         <scene sceneID="hZG-O7-Lnz">
@@ -141,7 +197,9 @@
                             <outlet property="delegate" destination="eW5-8x-Ixu" id="ib8-Sa-wfQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GCD" id="Qbj-7G-bCI"/>
+                    <navigationItem key="navigationItem" title="GCD" id="Qbj-7G-bCI">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="NnA-mj-wA0"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFD-rT-9ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

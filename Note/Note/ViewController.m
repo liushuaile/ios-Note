@@ -40,7 +40,7 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD",@"CoreData", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD",@"CoreData",@"FileDownload", nil];
     }
     return _dataArray;
 }
@@ -77,6 +77,10 @@ static NSString * const cellIdentifier = @"cell";
                     case 1:
                         [self performSegueWithIdentifier:@"GotoCoreData" sender:self];
                         break;
+                    case 2:
+                        [self performSegueWithIdentifier:@"GotoFileDownload" sender:self];
+                        break;
+                        
                     default:
                         
                         break;
