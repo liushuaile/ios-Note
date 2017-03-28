@@ -26,7 +26,10 @@ static NSString * const cellIdentifier = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    //隐藏/去掉 导航栏返回按钮中的文字,实现机制将字体上移出视图之外。
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+
     self.tableView.delegate = self.tvDelegate;
     self.tableView.dataSource = self.tvDelegate;
 }

@@ -34,10 +34,28 @@ static NSString * const cellIdentifier = @"cell";
 #pragma mark - Custom Accessors
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking下载文件",@"使用AFNetworking断点下载（支持离线）", nil];
+        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking断点下载（支持离线）", nil];
     }
     return _dataArray;
 }
+
+#pragma mark- Methods
+- (IBAction)redoSender:(id)sender {
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"QQ_V5.4.0.dmg"];
+    // 创建一个空的文件到沙盒中
+    NSFileManager *FM = [NSFileManager defaultManager];
+    BOOL b_exist = [FM fileExistsAtPath:path];
+    if (b_exist) {
+        NSError *error = nil;
+        BOOL b_remove = [FM removeItemAtPath:path error:&error];
+        if (!b_remove) {
+            NSLog(@"%@",error.userInfo);
+        } else {
+            NSLog(@"Remove File at: %@",path);
+        }
+    }
+}
+
 
 #pragma mark - Table view data source
 
@@ -68,7 +86,10 @@ static NSString * const cellIdentifier = @"cell";
     NSInteger row = indexPath.row;
     switch (row) {
         case 0:
-            [self performSegueWithIdentifier:@"GotoDownloadDetail" sender:self];
+            [self performSegueWithIdentifier:@"GotoDownloadDetail" sender:@"style1"];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"GotoDownloadDetail" sender:@"style2"];
             break;
             
         default:
@@ -121,7 +142,8 @@ static NSString * const cellIdentifier = @"cell";
     if ([segue.identifier  isEqual: @"GotoDownloadDetail"]) {
         // 需要执行的代码
         id viewcontroller = [segue destinationViewController];
-        [viewcontroller setValue:@"DownloadDetail" forKey:@"title"];
+        [viewcontroller setValue:@"下载" forKey:@"title"];
+        [viewcontroller setValue:sender forKey:@"style"];
     }
 #else
     if ([segue.destinationViewController isKindOfClass:[IndexTableViewController class]]) {

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FileDownloadDetailViewController : UIViewController
-
+@property (copy, nonatomic) NSString *style;
 @end

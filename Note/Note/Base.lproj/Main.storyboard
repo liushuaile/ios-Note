@@ -135,7 +135,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="FileDownload" id="WEA-CI-uyx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="redo" id="KeH-ge-v3a"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="redo" id="KeH-ge-v3a">
+                            <connections>
+                                <action selector="redoSender:" destination="RaF-eL-n8q" id="Umd-tO-gZi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -157,9 +161,52 @@
                     <view key="view" contentMode="scaleToFill" id="CU7-Cz-Pfu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前下载进度:00.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM2-si-Riv">
+                                <rect key="frame" x="40" y="232" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="daw-JL-b05"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-Lz-whU">
+                                <rect key="frame" x="40" y="183" width="295" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="kgz-vl-3zv"/>
+                                </constraints>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-sX-57X">
+                                <rect key="frame" x="162" y="326" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Geg-Mb-Utf"/>
+                                    <constraint firstAttribute="height" constant="50" id="yAx-JE-uzU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="play"/>
+                                <state key="selected" backgroundImage="stop"/>
+                                <connections>
+                                    <action selector="OfflinResumeDownloadBtnClicked:" destination="1QD-WN-Ezz" eventType="touchUpInside" id="KCo-xE-LNo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mM2-si-Riv" firstAttribute="top" secondItem="Xfq-Lz-whU" secondAttribute="bottom" constant="47" id="2q7-6W-a3X"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="centerX" secondItem="lDg-sX-57X" secondAttribute="centerX" id="TXd-bb-oOR"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="trailing" secondItem="mM2-si-Riv" secondAttribute="trailing" id="Uaa-CK-GYu"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="top" secondItem="Y32-s7-psp" secondAttribute="bottom" constant="119" id="Yi2-pw-jK2"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="leading" secondItem="mM2-si-Riv" secondAttribute="leading" id="fzL-pb-dAh"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="leading" secondItem="CU7-Cz-Pfu" secondAttribute="leadingMargin" constant="24" id="l7n-a7-wcV"/>
+                            <constraint firstItem="lDg-sX-57X" firstAttribute="top" secondItem="mM2-si-Riv" secondAttribute="bottom" constant="73" id="qUD-UP-fFr"/>
+                            <constraint firstItem="Xfq-Lz-whU" firstAttribute="centerX" secondItem="CU7-Cz-Pfu" secondAttribute="centerX" id="z2Y-n9-cSf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ej9-BC-HZ7"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="mM2-si-Riv" id="B9G-Co-Gje"/>
+                        <outlet property="progressView" destination="Xfq-Lz-whU" id="ei0-4L-CbY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uum-Zq-Tay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,4 +271,8 @@
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="64" height="64"/>
+        <image name="stop" width="64" height="64"/>
+    </resources>
 </document>
