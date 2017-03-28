@@ -11,3 +11,8 @@
 @interface CoreDataTableViewController : UITableViewController
 
 @end
+
+/*
+ 注意：
+ Model.xcdatamodeld 文件的toolsVersion minimum要选择xcode7.3，否则会报错。
+ */
