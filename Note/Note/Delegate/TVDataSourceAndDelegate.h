@@ -30,8 +30,13 @@ typedef void (^TVCConfigureBlock)(id cell, id item, NSIndexPath *indexPath, NSIn
 @property (strong, nonatomic) NSArray *items;
 @property (copy, nonatomic) NSString *cellIdenifier;
 
-- (id)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock;
-- (id)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock parentViewController:(id)parentViewController;
+/*
+ ①instancetype可以返回和方法所在类相同类型的对象，id只能返回未知类型的对象；(确定对象的类型，能够帮助编译器更好的为我们定位代码书写问题,比如未知方法的调用)
+ example：[[[NSArray alloc] init] mediaPlaybackAllowsAirPlay]; //  "No visible @interface for `NSArray` declares the selector `mediaPlaybackAllowsAirPlay`" 
+ ②instancetype只能作为返回值，不能像id那样作为参数
+ */
+- (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock;
+- (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock parentViewController:(id)parentViewController;
 
 
 @property (weak, nonatomic) UIViewController *parentViewController;

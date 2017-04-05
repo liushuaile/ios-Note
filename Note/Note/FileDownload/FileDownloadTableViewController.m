@@ -92,6 +92,8 @@ static NSString * const cellIdentifier = @"cell";
     }
     // Configure the cell...
     cell.textLabel.text = self.dataArray[indexPath.row];
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
+
     
     return cell;
 }

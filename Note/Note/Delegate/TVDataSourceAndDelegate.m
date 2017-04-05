@@ -10,7 +10,7 @@
 
 @implementation TVDataSourceAndDelegate
 
-- (id)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock {
+- (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock {
     
     if (self = [super init]) {
         _cellIdenifier = cellIdentifier;
@@ -19,7 +19,7 @@
     }
     return self;
 }
-- (id)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock parentViewController:(id)parentViewController {
+- (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureBlock:(TVCConfigureBlock)configureBlock parentViewController:(id)parentViewController {
     
     if (self = [super init]) {
         _cellIdenifier = cellIdentifier;
@@ -50,15 +50,15 @@
     id item = [self.items objectAtIndex:indexPath.row];
     self.configureBlock(cell, item, indexPath, CellControlLoadData);
     return cell;
+    
 }
 
 #pragma mark- UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%s",__func__);
-    
     id item = [self.items objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     self.configureBlock(cell, item, indexPath, CellControlSelect);
+    
 }
 
 @end

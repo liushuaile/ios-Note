@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+Logging.h"
 
 @interface ViewController : UIViewController
-
 
 @end
 

@@ -43,7 +43,7 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"JavaScriptCore", @"RunTime", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", nil];
     }
     return _dataArray;
 }
@@ -83,7 +83,12 @@ static NSString * const cellIdentifier = @"cell";
                     case 2:
                         [self performSegueWithIdentifier:@"GotoFileDownload" sender:self];
                         break;
-                        
+                    case 4:
+                        [self performSegueWithIdentifier:@"GotoRunLoop" sender:self];
+                        break;
+                    case 3:
+                        [self performSegueWithIdentifier:@"GotoCopy" sender:self];
+                        break;
                     default:
                         
                         break;
@@ -94,5 +99,4 @@ static NSString * const cellIdentifier = @"cell";
     }
     return _tvDelegate;
 }
-
 @end

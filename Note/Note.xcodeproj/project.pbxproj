@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A29E47B1E8CEC4B002DE5EA /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A29E47A1E8CEC4B002DE5EA /* UIViewController+Logging.m */; };
+		5A29E4821E93CAA3002DE5EA /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A29E4811E93CAA3002DE5EA /* RunLoopViewController.m */; };
+		5A29E4861E93F3C1002DE5EA /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A29E4851E93F3C1002DE5EA /* CopyViewController.m */; };
 		5A462D7D1E8A05AB004139A6 /* GCDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D7C1E8A05AB004139A6 /* GCDTableViewController.m */; };
 		5A462D841E8A076F004139A6 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D831E8A076F004139A6 /* CoreDataTableViewController.m */; };
 		5A462D881E8A111E004139A6 /* LSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A462D871E8A111E004139A6 /* LSAlertController.m */; };
@@ -35,6 +38,12 @@
 /* Begin PBXFileReference section */
 		2D22BB26FDD1BE6D9FBA7E35 /* Pods-Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.debug.xcconfig"; sourceTree = "<group>"; };
 		2EE9C44B493552A6D8395E72 /* Pods-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.release.xcconfig"; sourceTree = "<group>"; };
+		5A29E4791E8CEC4B002DE5EA /* UIViewController+Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logging.h"; sourceTree = "<group>"; };
+		5A29E47A1E8CEC4B002DE5EA /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
+		5A29E4801E93CAA3002DE5EA /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		5A29E4811E93CAA3002DE5EA /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		5A29E4841E93F3C1002DE5EA /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CopyViewController.h; path = Copy/CopyViewController.h; sourceTree = "<group>"; };
+		5A29E4851E93F3C1002DE5EA /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CopyViewController.m; path = Copy/CopyViewController.m; sourceTree = "<group>"; };
 		5A462D7B1E8A05AB004139A6 /* GCDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDTableViewController.h; path = GCD/GCDTableViewController.h; sourceTree = "<group>"; };
 		5A462D7C1E8A05AB004139A6 /* GCDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDTableViewController.m; path = GCD/GCDTableViewController.m; sourceTree = "<group>"; };
 		5A462D821E8A076F004139A6 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = CoreData/CoreDataTableViewController.h; sourceTree = "<group>"; };
@@ -100,6 +109,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5A29E47F1E93CA88002DE5EA /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				5A29E4801E93CAA3002DE5EA /* RunLoopViewController.h */,
+				5A29E4811E93CAA3002DE5EA /* RunLoopViewController.m */,
+			);
+			name = RunLoop;
+			sourceTree = "<group>";
+		};
+		5A29E4831E93F3A9002DE5EA /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				5A29E4841E93F3C1002DE5EA /* CopyViewController.h */,
+				5A29E4851E93F3C1002DE5EA /* CopyViewController.m */,
+			);
+			name = Copy;
+			sourceTree = "<group>";
+		};
 		5A462D011E88DEA6004139A6 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +165,8 @@
 			children = (
 				5A462D861E8A111E004139A6 /* LSAlertController.h */,
 				5A462D871E8A111E004139A6 /* LSAlertController.m */,
+				5A29E4791E8CEC4B002DE5EA /* UIViewController+Logging.h */,
+				5A29E47A1E8CEC4B002DE5EA /* UIViewController+Logging.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -200,6 +229,8 @@
 		5AB0A1481E8504B000105D17 /* Note */ = {
 			isa = PBXGroup;
 			children = (
+				5A29E4831E93F3A9002DE5EA /* Copy */,
+				5A29E47F1E93CA88002DE5EA /* RunLoop */,
 				5A462DA21E8A621E004139A6 /* FileDownload */,
 				5A462D851E8A10EF004139A6 /* Tools */,
 				5A462D811E8A075D004139A6 /* CoreData */,
@@ -359,12 +390,15 @@
 				5A462D841E8A076F004139A6 /* CoreDataTableViewController.m in Sources */,
 				5A462D7D1E8A05AB004139A6 /* GCDTableViewController.m in Sources */,
 				5AB0A14E1E8504B000105D17 /* AppDelegate.m in Sources */,
+				5A29E4861E93F3C1002DE5EA /* CopyViewController.m in Sources */,
 				5A462DA11E8A3AF1004139A6 /* Person+CoreDataProperties.m in Sources */,
 				5A462D911E8A3313004139A6 /* CoreDataManager.m in Sources */,
+				5A29E47B1E8CEC4B002DE5EA /* UIViewController+Logging.m in Sources */,
 				5A462DBA1E8AD6DD004139A6 /* TVDataSourceAndDelegate.m in Sources */,
 				5A462D8E1E8A32B0004139A6 /* Model.xcdatamodeld in Sources */,
 				5AB0A14B1E8504B000105D17 /* main.m in Sources */,
 				5A462DA81E8A6AE7004139A6 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
+				5A29E4821E93CAA3002DE5EA /* RunLoopViewController.m in Sources */,
 				5AB0A1621E8504D500105D17 /* Notes.m in Sources */,
 				5A462DB61E8ACF03004139A6 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
 				5A462DA51E8A625C004139A6 /* FileDownloadTableViewController.m in Sources */,
