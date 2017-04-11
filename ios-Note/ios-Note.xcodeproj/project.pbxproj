@@ -42,7 +42,6 @@
 		5A541D4C1E9D31E500593F99 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D2C1E9D31E500593F99 /* UIAlertController+Blocks.m */; };
 		5A541D4D1E9D31E500593F99 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D2E1E9D31E500593F99 /* UIViewController+Logging.m */; };
 		5A541D541E9D320200593F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D4F1E9D320200593F99 /* AppDelegate.m */; };
-		5A541D551E9D320200593F99 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D511E9D320200593F99 /* Notes.m */; };
 		5A541D561E9D320200593F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D531E9D320200593F99 /* ViewController.m */; };
 		5A541D5B1E9D321900593F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D571E9D321900593F99 /* LaunchScreen.storyboard */; };
 		5A541D5C1E9D321900593F99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D591E9D321900593F99 /* Main.storyboard */; };
@@ -118,8 +117,6 @@
 		5A541D2E1E9D31E500593F99 /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
 		5A541D4E1E9D320200593F99 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "ios-Note/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5A541D4F1E9D320200593F99 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "ios-Note/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
-		5A541D501E9D320200593F99 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notes.h; path = "ios-Note/Notes.h"; sourceTree = SOURCE_ROOT; };
-		5A541D511E9D320200593F99 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notes.m; path = "ios-Note/Notes.m"; sourceTree = SOURCE_ROOT; };
 		5A541D521E9D320200593F99 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "ios-Note/ViewController.h"; sourceTree = SOURCE_ROOT; };
 		5A541D531E9D320200593F99 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "ios-Note/ViewController.m"; sourceTree = SOURCE_ROOT; };
 		5A541D581E9D321900593F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ios-Note/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -128,6 +125,7 @@
 		5A541D5F1E9D324000593F99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ios-Note/Info.plist"; sourceTree = SOURCE_ROOT; };
 		5A541D611E9D325800593F99 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "ios-Note/main.m"; sourceTree = SOURCE_ROOT; };
 		5A541D621E9D325800593F99 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "ios-Note/PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		5A541D641E9D408C00593F99 /* ios-Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-Note.h"; sourceTree = SOURCE_ROOT; };
 		5AB0A1461E8504B000105D17 /* ios-Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-Note.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EE8B43D0564E69C4B07747 /* Pods-ios-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-Note/Pods-ios-Note.release.xcconfig"; sourceTree = "<group>"; };
@@ -340,8 +338,6 @@
 				5A541D5F1E9D324000593F99 /* Info.plist */,
 				5A541D4E1E9D320200593F99 /* AppDelegate.h */,
 				5A541D4F1E9D320200593F99 /* AppDelegate.m */,
-				5A541D501E9D320200593F99 /* Notes.h */,
-				5A541D511E9D320200593F99 /* Notes.m */,
 				5A541D521E9D320200593F99 /* ViewController.h */,
 				5A541D531E9D320200593F99 /* ViewController.m */,
 				5AB0A1491E8504B000105D17 /* Supporting Files */,
@@ -355,6 +351,7 @@
 			children = (
 				5A541D611E9D325800593F99 /* main.m */,
 				5A541D621E9D325800593F99 /* PrefixHeader.pch */,
+				5A541D641E9D408C00593F99 /* ios-Note.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -525,7 +522,6 @@
 				5A541CEA1E9D31D600593F99 /* GCDMethods.m in Sources */,
 				5A541D401E9D31E500593F99 /* UIView+LJC.m in Sources */,
 				5A541D491E9D31E500593F99 /* ASyncURLConnection.m in Sources */,
-				5A541D551E9D320200593F99 /* Notes.m in Sources */,
 				5A541D3B1E9D31E500593F99 /* Example2Controller.m in Sources */,
 				5A541D341E9D31E500593F99 /* TVDataSourceAndDelegate.m in Sources */,
 				5A541D361E9D31E500593F99 /* FileDownloadTableViewController.m in Sources */,
@@ -647,6 +643,7 @@
 			baseConfigurationReference = 357077015DA772438C9DC151 /* Pods-ios-Note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5P7X92RVXH;
 				GCC_PREFIX_HEADER = "ios-Note/PrefixHeader.pch";
@@ -664,6 +661,7 @@
 			baseConfigurationReference = 90EE8B43D0564E69C4B07747 /* Pods-ios-Note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5P7X92RVXH;
 				GCC_PREFIX_HEADER = "ios-Note/PrefixHeader.pch";
