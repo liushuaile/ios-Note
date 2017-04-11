@@ -39,7 +39,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Note.xcscheme</key>
+		<key>Pods-ios-Note.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,59 +54,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0AC55E754182E1FCF070AC7F74379523</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1FB1B1D8FF1F1456D097A8FA28C5A1AB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>31F09EDCEBA9C8C5CE37BB6CC6BA5856</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>477D19A847924E055CA4950B01F69D7B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84DC0800182A567121A5D0BB965ACDEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C7C5FD310966070D9553E5B95C59641B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

@@ -34,19 +34,9 @@ static NSString * const cellIdentifier = @"cell";
 
     self.tableView.delegate = self.tvDelegate;
     self.tableView.dataSource = self.tvDelegate;
-    
-    @autoreleasepool {
-        id obj = [NSArray new];
-        printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
 
-    };
-//    id obj = [NSArray new];
-//    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+//    [self SSKeychainTest];
 
-    id obj = [[NSObject alloc]init];
-    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
-    
-//    NSLog(@"retain count = %d",_objc_rootRetainCount(obj));
 }
 
 
@@ -55,6 +45,7 @@ static NSString * const cellIdentifier = @"cell";
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark- Custom Accessors
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
@@ -122,4 +113,32 @@ static NSString * const cellIdentifier = @"cell";
     }
     return _tvDelegate;
 }
+
+#pragma mark- Methods
+
+- (void)SSKeychainTest {
+    
+    NSString *userName = @"slliu";
+    NSString *password = @"123123";
+    NSString *bundleID = [NSBundle mainBundle].bundleIdentifier;
+    [SSKeychain setPassword:userName forService:bundleID account:@"username"];
+    [SSKeychain setPassword:password forService:bundleID account:@"password"];
+    [SSKeychain deletePasswordForService:bundleID account:@"username"];
+    NSString *passwords = [SSKeychain passwordForService:bundleID account:@"password"];
+    NSLog(@"SSkeychain解密=====%@",passwords);
+}
+
+- (void)RetainCountTest {
+    @autoreleasepool {
+        id obj = [NSArray new];
+        printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+    };
+    id obj = [NSArray new];
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+    
+    id obj1 = [[NSObject alloc]init];
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+    
+}
+
 @end

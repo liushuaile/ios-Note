@@ -18,4 +18,5 @@
 #import "Tools.h"
 #import "Masonry.h"
 #import "MMPlaceHolder.h"
+#import "SSKeychain.h"
 #endif /* PrefixHeader_pch */
