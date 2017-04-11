@@ -104,5 +104,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
 @end

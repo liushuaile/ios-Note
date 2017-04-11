@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#define __IPHONE_8 (__IPHONE_8_0 || __IPHONE_8_1 || __IPHONE_8_2 || __IPHONE_8_3 || __IPHONE_8_4)
 @interface AppDelegate ()
 
 @end

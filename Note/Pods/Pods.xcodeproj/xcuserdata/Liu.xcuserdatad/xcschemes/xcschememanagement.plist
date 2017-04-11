@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MMPlaceHolder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -52,7 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>303E3F902BA5A7F7B6B2CBC87E395737</key>
+		<key>1FB1B1D8FF1F1456D097A8FA28C5A1AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31F09EDCEBA9C8C5CE37BB6CC6BA5856</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477D19A847924E055CA4950B01F69D7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84DC0800182A567121A5D0BB965ACDEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,11 +103,6 @@
 			<true/>
 		</dict>
 		<key>C7C5FD310966070D9553E5B95C59641B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E989C0E1B7F69BA1EE456D396D47AF2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

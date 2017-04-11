@@ -21,7 +21,9 @@
 - (void) syncConcurrent {
     NSLog(@"syncConcurrent---begin");
     
-    dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     dispatch_sync(queue, ^{
         for (int i = 0; i < 2; ++i) {
@@ -51,7 +53,9 @@
 - (void) asyncConcurrent {
     NSLog(@"asyncConcurrent---begin");
     
-    dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     dispatch_async(queue, ^{
         for (int i = 0; i < 2; ++i) {
@@ -69,6 +73,7 @@
         }
     });
     
+//    dispatch_release(queue);
     NSLog(@"asyncConcurrent---end");
 }
 
@@ -257,6 +262,42 @@
         // 等前面的异步操作都执行完毕后，回到主线程...
     });
 }
+
+#pragma mark - NSThread
+
+- (void)runThread {
+    
+    /*
+     2017-04-09 10:18:59.570 Note[51379:18121391] Logging --> [ViewController]
+     51379    进程ID
+     18121391 线程ID
+     */
+    
+    //1、通过alloc init创建并执行线程
+//    NSThread *thread = [[NSThread alloc] initWithTarget:<#(nonnull id)#> selector:<#(nonnull SEL)#> object:<#(nullable id)#>];
+//    [thread setName:@"Name_Thread1"]; //设定名称
+//    [thread setThreadPriority:0.5]; //设定优先级
+//    [thread start];
+    
+    //2、通过detachNewThreadSelector 方式创建线程
+//    [NSThread detachNewThreadSelector:<#(nonnull SEL)#> toTarget:<#(nonnull id)#> withObject:<#(nullable id)#>];
+    
+    //3、通过performSelectorInBackground 方式创建线程
+//    [self performSelectorInBackground:<#(nonnull SEL)#> withObject:<#(nullable id)#>];
+    
+//    [self performSelectorOnMainThread:<#(nonnull SEL)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>];
+}
+
+
+- (void)runOpration {
+    
+//    NSOperation
+}
+
+
+
+
+
 
 
 @end

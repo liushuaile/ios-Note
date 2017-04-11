@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AB0A1451E8504B000105D17"
-               BuildableName = "Note.app"
-               BlueprintName = "Note"
-               ReferencedContainer = "container:Note.xcodeproj">
+               BuildableName = "ios-Note.app"
+               BlueprintName = "ios-Note"
+               ReferencedContainer = "container:ios-Note.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AB0A1451E8504B000105D17"
-            BuildableName = "Note.app"
-            BlueprintName = "Note"
-            ReferencedContainer = "container:Note.xcodeproj">
+            BuildableName = "ios-Note.app"
+            BlueprintName = "ios-Note"
+            ReferencedContainer = "container:ios-Note.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AB0A1451E8504B000105D17"
-            BuildableName = "Note.app"
-            BlueprintName = "Note"
-            ReferencedContainer = "container:Note.xcodeproj">
+            BuildableName = "ios-Note.app"
+            BlueprintName = "ios-Note"
+            ReferencedContainer = "container:ios-Note.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AB0A1451E8504B000105D17"
-            BuildableName = "Note.app"
-            BlueprintName = "Note"
-            ReferencedContainer = "container:Note.xcodeproj">
+            BuildableName = "ios-Note.app"
+            BlueprintName = "ios-Note"
+            ReferencedContainer = "container:ios-Note.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -93,6 +93,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "ios-Note"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

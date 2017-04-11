@@ -23,6 +23,8 @@ static NSString * const cellIdentifier = @"cell";
 
 @implementation ViewController
 
+#pragma mark - Lifecyle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -32,6 +34,19 @@ static NSString * const cellIdentifier = @"cell";
 
     self.tableView.delegate = self.tvDelegate;
     self.tableView.dataSource = self.tvDelegate;
+    
+    @autoreleasepool {
+        id obj = [NSArray new];
+        printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+
+    };
+//    id obj = [NSArray new];
+//    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+
+    id obj = [[NSObject alloc]init];
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj)));
+    
+//    NSLog(@"retain count = %d",_objc_rootRetainCount(obj));
 }
 
 
@@ -43,13 +58,15 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", nil];
     }
     return _dataArray;
 }
 
 - (TVDataSourceAndDelegate *)tvDelegate {
     if (_tvDelegate == nil) {
+        
+        __weak typeof(self) weakSelf = self;
         _tvDelegate = [[TVDataSourceAndDelegate alloc] initWithItems:self.dataArray cellIdentifier:cellIdentifier configureBlock:^(UITableViewCell *cell, NSString *item, NSIndexPath *indexPath, NSInteger style) {
             
             if (style == CellControlLoadData) {
@@ -75,19 +92,25 @@ static NSString * const cellIdentifier = @"cell";
                 NSInteger row = indexPath.row;
                 switch (row) {
                     case 0:
-                        [self performSegueWithIdentifier:@"GotoGCD" sender:self];
+                        [weakSelf performSegueWithIdentifier:@"GotoGCD" sender:nil];
                         break;
                     case 1:
-                        [self performSegueWithIdentifier:@"GotoCoreData" sender:self];
+                        [weakSelf performSegueWithIdentifier:@"GotoCoreData" sender:nil];
                         break;
                     case 2:
-                        [self performSegueWithIdentifier:@"GotoFileDownload" sender:self];
+                        [weakSelf performSegueWithIdentifier:@"GotoFileDownload" sender:nil];
                         break;
                     case 4:
-                        [self performSegueWithIdentifier:@"GotoRunLoop" sender:self];
+                        [weakSelf performSegueWithIdentifier:@"GotoRunLoop" sender:nil];
                         break;
                     case 3:
-                        [self performSegueWithIdentifier:@"GotoCopy" sender:self];
+                        [weakSelf performSegueWithIdentifier:@"GotoCopy" sender:nil];
+                        break;
+                    case 5:
+                        [weakSelf performSegueWithIdentifier:@"GotoMasonry" sender:nil];
+                        break;
+                    case 6:
+                        [weakSelf performSegueWithIdentifier:@"GotoRSA" sender:nil];
                         break;
                     default:
                         
