@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "TVDataSourceAndDelegate.h"
 #import "GCDTableViewController.h"
+#import "WaterFallViewController.h"
+
 
 static NSString * const cellIdentifier = @"cell";
 
@@ -49,7 +51,7 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", nil];
     }
     return _dataArray;
 }
@@ -102,6 +104,11 @@ static NSString * const cellIdentifier = @"cell";
                         break;
                     case 6:
                         [weakSelf performSegueWithIdentifier:@"GotoRSA" sender:nil];
+                        break;
+                    case 7: {
+                        WaterFallViewController *WFViewControler = [[WaterFallViewController alloc] init];
+                        [self.navigationController pushViewController:WFViewControler animated:YES];
+                    }
                         break;
                     default:
                         

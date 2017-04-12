@@ -54,7 +54,7 @@
                             <constraint firstItem="fWA-Jd-yXV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="yhH-Za-chW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="brX-iH-BYF"/>
+                    <navigationItem key="navigationItem" title="ios-Note" id="brX-iH-BYF"/>
                     <connections>
                         <outlet property="tableView" destination="fWA-Jd-yXV" id="hyW-5m-7fn"/>
                         <segue destination="eW5-8x-Ixu" kind="show" identifier="GotoGCD" id="Xt6-EQ-F05"/>

@@ -36,11 +36,6 @@
 		5A541D461E9D31E500593F99 /* rsaCert.crt in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D1E1E9D31E500593F99 /* rsaCert.crt */; };
 		5A541D471E9D31E500593F99 /* RSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D201E9D31E500593F99 /* RSAViewController.m */; };
 		5A541D481E9D31E500593F99 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D231E9D31E500593F99 /* RunLoopViewController.m */; };
-		5A541D491E9D31E500593F99 /* ASyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D261E9D31E500593F99 /* ASyncURLConnection.m */; };
-		5A541D4A1E9D31E500593F99 /* LSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D281E9D31E500593F99 /* LSAlertController.m */; };
-		5A541D4B1E9D31E500593F99 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D2A1E9D31E500593F99 /* Tools.m */; };
-		5A541D4C1E9D31E500593F99 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D2C1E9D31E500593F99 /* UIAlertController+Blocks.m */; };
-		5A541D4D1E9D31E500593F99 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D2E1E9D31E500593F99 /* UIViewController+Logging.m */; };
 		5A541D541E9D320200593F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D4F1E9D320200593F99 /* AppDelegate.m */; };
 		5A541D561E9D320200593F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D531E9D320200593F99 /* ViewController.m */; };
 		5A541D5B1E9D321900593F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D571E9D321900593F99 /* LaunchScreen.storyboard */; };
@@ -48,6 +43,20 @@
 		5A541D5E1E9D322300593F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D5D1E9D322300593F99 /* Assets.xcassets */; };
 		5A541D601E9D324000593F99 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A541D5F1E9D324000593F99 /* Info.plist */; };
 		5A541D631E9D325800593F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D611E9D325800593F99 /* main.m */; };
+		5A541DEC1E9DCBDF00593F99 /* WaterFallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541DEB1E9DCBDF00593F99 /* WaterFallViewController.m */; };
+		5A541DEF1E9DCCA900593F99 /* WaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541DEE1E9DCCA900593F99 /* WaterFallLayout.m */; };
+		5A541DF21E9DCD3300593F99 /* WFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541DF11E9DCD3300593F99 /* WFImage.m */; };
+		5A541DF41E9DCFED00593F99 /* images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A541DF31E9DCFED00593F99 /* images.plist */; };
+		5A541DF71E9DF75700593F99 /* WFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541DF61E9DF75700593F99 /* WFCollectionViewCell.m */; };
+		5A541DFC1E9DFB7200593F99 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A541DFA1E9DFB7200593F99 /* icon@2x.png */; };
+		5A541DFD1E9DFB7200593F99 /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A541DFB1E9DFB7200593F99 /* icon@3x.png */; };
+		5A541E091E9DFBE700593F99 /* ASyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */; };
+		5A541E0A1E9DFBE700593F99 /* LSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E021E9DFBE700593F99 /* LSAlertController.m */; };
+		5A541E0B1E9DFBE700593F99 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E041E9DFBE700593F99 /* Tools.m */; };
+		5A541E0C1E9DFBE700593F99 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E061E9DFBE700593F99 /* UIAlertController+Blocks.m */; };
+		5A541E0D1E9DFBE700593F99 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E081E9DFBE700593F99 /* UIViewController+Logging.m */; };
+		5A541E0F1E9DFCB200593F99 /* img001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E0E1E9DFCB200593F99 /* img001.jpg */; };
+		5A541E111E9DFDC500593F99 /* img002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E101E9DFDC500593F99 /* img002.jpg */; };
 		C321BB2804A3A580903231D4 /* libPods-ios-Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */; };
 /* End PBXBuildFile section */
 
@@ -105,16 +114,6 @@
 		5A541D201E9D31E500593F99 /* RSAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAViewController.m; sourceTree = "<group>"; };
 		5A541D221E9D31E500593F99 /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		5A541D231E9D31E500593F99 /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
-		5A541D251E9D31E500593F99 /* ASyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASyncURLConnection.h; sourceTree = "<group>"; };
-		5A541D261E9D31E500593F99 /* ASyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASyncURLConnection.m; sourceTree = "<group>"; };
-		5A541D271E9D31E500593F99 /* LSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAlertController.h; sourceTree = "<group>"; };
-		5A541D281E9D31E500593F99 /* LSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAlertController.m; sourceTree = "<group>"; };
-		5A541D291E9D31E500593F99 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		5A541D2A1E9D31E500593F99 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
-		5A541D2B1E9D31E500593F99 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
-		5A541D2C1E9D31E500593F99 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
-		5A541D2D1E9D31E500593F99 /* UIViewController+Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logging.h"; sourceTree = "<group>"; };
-		5A541D2E1E9D31E500593F99 /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
 		5A541D4E1E9D320200593F99 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "ios-Note/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5A541D4F1E9D320200593F99 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "ios-Note/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		5A541D521E9D320200593F99 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "ios-Note/ViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -124,8 +123,31 @@
 		5A541D5D1E9D322300593F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "ios-Note/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		5A541D5F1E9D324000593F99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ios-Note/Info.plist"; sourceTree = SOURCE_ROOT; };
 		5A541D611E9D325800593F99 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "ios-Note/main.m"; sourceTree = SOURCE_ROOT; };
-		5A541D621E9D325800593F99 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "ios-Note/PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		5A541D621E9D325800593F99 /* ios-NotePrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ios-NotePrefix.pch"; path = "ios-Note/ios-NotePrefix.pch"; sourceTree = SOURCE_ROOT; };
 		5A541D641E9D408C00593F99 /* ios-Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-Note.h"; sourceTree = SOURCE_ROOT; };
+		5A541DEA1E9DCBDF00593F99 /* WaterFallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallViewController.h; sourceTree = "<group>"; };
+		5A541DEB1E9DCBDF00593F99 /* WaterFallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallViewController.m; sourceTree = "<group>"; };
+		5A541DED1E9DCCA900593F99 /* WaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallLayout.h; sourceTree = "<group>"; };
+		5A541DEE1E9DCCA900593F99 /* WaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallLayout.m; sourceTree = "<group>"; };
+		5A541DF01E9DCD3300593F99 /* WFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFImage.h; sourceTree = "<group>"; };
+		5A541DF11E9DCD3300593F99 /* WFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFImage.m; sourceTree = "<group>"; };
+		5A541DF31E9DCFED00593F99 /* images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = images.plist; sourceTree = "<group>"; };
+		5A541DF51E9DF75700593F99 /* WFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCollectionViewCell.h; sourceTree = "<group>"; };
+		5A541DF61E9DF75700593F99 /* WFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCollectionViewCell.m; sourceTree = "<group>"; };
+		5A541DFA1E9DFB7200593F99 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		5A541DFB1E9DFB7200593F99 /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		5A541DFF1E9DFBE700593F99 /* ASyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASyncURLConnection.h; sourceTree = "<group>"; };
+		5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASyncURLConnection.m; sourceTree = "<group>"; };
+		5A541E011E9DFBE700593F99 /* LSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAlertController.h; sourceTree = "<group>"; };
+		5A541E021E9DFBE700593F99 /* LSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAlertController.m; sourceTree = "<group>"; };
+		5A541E031E9DFBE700593F99 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		5A541E041E9DFBE700593F99 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		5A541E051E9DFBE700593F99 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
+		5A541E061E9DFBE700593F99 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
+		5A541E071E9DFBE700593F99 /* UIViewController+Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logging.h"; sourceTree = "<group>"; };
+		5A541E081E9DFBE700593F99 /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
+		5A541E0E1E9DFCB200593F99 /* img001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img001.jpg; sourceTree = "<group>"; };
+		5A541E101E9DFDC500593F99 /* img002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img002.jpg; sourceTree = "<group>"; };
 		5AB0A1461E8504B000105D17 /* ios-Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-Note.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EE8B43D0564E69C4B07747 /* Pods-ios-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-Note/Pods-ios-Note.release.xcconfig"; sourceTree = "<group>"; };
@@ -284,27 +306,12 @@
 			path = "ios-Note/RunLoop";
 			sourceTree = SOURCE_ROOT;
 		};
-		5A541D241E9D31E500593F99 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				5A541D251E9D31E500593F99 /* ASyncURLConnection.h */,
-				5A541D261E9D31E500593F99 /* ASyncURLConnection.m */,
-				5A541D271E9D31E500593F99 /* LSAlertController.h */,
-				5A541D281E9D31E500593F99 /* LSAlertController.m */,
-				5A541D291E9D31E500593F99 /* Tools.h */,
-				5A541D2A1E9D31E500593F99 /* Tools.m */,
-				5A541D2B1E9D31E500593F99 /* UIAlertController+Blocks.h */,
-				5A541D2C1E9D31E500593F99 /* UIAlertController+Blocks.m */,
-				5A541D2D1E9D31E500593F99 /* UIViewController+Logging.h */,
-				5A541D2E1E9D31E500593F99 /* UIViewController+Logging.m */,
-			);
-			name = Tools;
-			path = "ios-Note/Tools";
-			sourceTree = SOURCE_ROOT;
-		};
 		5A541D661E9DC40000593F99 /* ios-Note */ = {
 			isa = PBXGroup;
 			children = (
+				5A541DFE1E9DFBE700593F99 /* tools */,
+				5A541DF81E9DFB5100593F99 /* resource */,
+				5A541DE91E9DCB9800593F99 /* WaterFall */,
 				5A541CEC1E9D31E500593F99 /* Copy */,
 				5A541CEF1E9D31E500593F99 /* CoreData */,
 				5A541CF91E9D31E500593F99 /* Delegate */,
@@ -312,7 +319,6 @@
 				5A541D071E9D31E500593F99 /* Masonry */,
 				5A541D161E9D31E500593F99 /* RSA */,
 				5A541D211E9D31E500593F99 /* RunLoop */,
-				5A541D241E9D31E500593F99 /* Tools */,
 				5A541CE51E9D31D600593F99 /* GCD */,
 				5A541D5D1E9D322300593F99 /* Assets.xcassets */,
 				5A541D571E9D321900593F99 /* LaunchScreen.storyboard */,
@@ -324,10 +330,62 @@
 				5A541D531E9D320200593F99 /* ViewController.m */,
 				5AB0A1491E8504B000105D17 /* Supporting Files */,
 				5A541D611E9D325800593F99 /* main.m */,
-				5A541D621E9D325800593F99 /* PrefixHeader.pch */,
+				5A541D621E9D325800593F99 /* ios-NotePrefix.pch */,
 				5A541D641E9D408C00593F99 /* ios-Note.h */,
 			);
 			path = "ios-Note";
+			sourceTree = "<group>";
+		};
+		5A541DE91E9DCB9800593F99 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				5A541DF31E9DCFED00593F99 /* images.plist */,
+				5A541DEA1E9DCBDF00593F99 /* WaterFallViewController.h */,
+				5A541DEB1E9DCBDF00593F99 /* WaterFallViewController.m */,
+				5A541DED1E9DCCA900593F99 /* WaterFallLayout.h */,
+				5A541DEE1E9DCCA900593F99 /* WaterFallLayout.m */,
+				5A541DF51E9DF75700593F99 /* WFCollectionViewCell.h */,
+				5A541DF61E9DF75700593F99 /* WFCollectionViewCell.m */,
+				5A541DF01E9DCD3300593F99 /* WFImage.h */,
+				5A541DF11E9DCD3300593F99 /* WFImage.m */,
+			);
+			path = WaterFall;
+			sourceTree = "<group>";
+		};
+		5A541DF81E9DFB5100593F99 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				5A541DF91E9DFB5100593F99 /* images */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		5A541DF91E9DFB5100593F99 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5A541E0E1E9DFCB200593F99 /* img001.jpg */,
+				5A541E101E9DFDC500593F99 /* img002.jpg */,
+				5A541DFA1E9DFB7200593F99 /* icon@2x.png */,
+				5A541DFB1E9DFB7200593F99 /* icon@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		5A541DFE1E9DFBE700593F99 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				5A541DFF1E9DFBE700593F99 /* ASyncURLConnection.h */,
+				5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */,
+				5A541E011E9DFBE700593F99 /* LSAlertController.h */,
+				5A541E021E9DFBE700593F99 /* LSAlertController.m */,
+				5A541E031E9DFBE700593F99 /* Tools.h */,
+				5A541E041E9DFBE700593F99 /* Tools.m */,
+				5A541E051E9DFBE700593F99 /* UIAlertController+Blocks.h */,
+				5A541E061E9DFBE700593F99 /* UIAlertController+Blocks.m */,
+				5A541E071E9DFBE700593F99 /* UIViewController+Logging.h */,
+				5A541E081E9DFBE700593F99 /* UIViewController+Logging.m */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		5AB0A13D1E8504B000105D17 = {
@@ -427,15 +485,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A541DF41E9DCFED00593F99 /* images.plist in Resources */,
+				5A541E0F1E9DFCB200593F99 /* img001.jpg in Resources */,
 				5A541D451E9D31E500593F99 /* rsaCerReq.csr in Resources */,
+				5A541DFD1E9DFB7200593F99 /* icon@3x.png in Resources */,
 				5A541D431E9D31E500593F99 /* private_key.pem in Resources */,
 				5A541D601E9D324000593F99 /* Info.plist in Resources */,
 				5A541D441E9D31E500593F99 /* public_key.der in Resources */,
 				5A541D5C1E9D321900593F99 /* Main.storyboard in Resources */,
 				5A541D5B1E9D321900593F99 /* LaunchScreen.storyboard in Resources */,
 				5A541D461E9D31E500593F99 /* rsaCert.crt in Resources */,
+				5A541E111E9DFDC500593F99 /* img002.jpg in Resources */,
 				5A541D5E1E9D322300593F99 /* Assets.xcassets in Resources */,
 				5A541D421E9D31E500593F99 /* private_key.p12 in Resources */,
+				5A541DFC1E9DFB7200593F99 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,34 +557,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A541E0C1E9DFBE700593F99 /* UIAlertController+Blocks.m in Sources */,
+				5A541E0D1E9DFBE700593F99 /* UIViewController+Logging.m in Sources */,
+				5A541DEF1E9DCCA900593F99 /* WaterFallLayout.m in Sources */,
 				5A541D3A1E9D31E500593F99 /* Example1Controller.m in Sources */,
+				5A541DF71E9DF75700593F99 /* WFCollectionViewCell.m in Sources */,
 				5A541D3E1E9D31E500593F99 /* Example5Controller.m in Sources */,
 				5A541D3C1E9D31E500593F99 /* Example3Controller.m in Sources */,
-				5A541D4D1E9D31E500593F99 /* UIViewController+Logging.m in Sources */,
 				5A541D411E9D31E500593F99 /* RSAEncryptor.m in Sources */,
 				5A541D471E9D31E500593F99 /* RSAViewController.m in Sources */,
+				5A541E091E9DFBE700593F99 /* ASyncURLConnection.m in Sources */,
 				5A541D631E9D325800593F99 /* main.m in Sources */,
+				5A541E0A1E9DFBE700593F99 /* LSAlertController.m in Sources */,
 				5A541D311E9D31E500593F99 /* CoreDataTableViewController.m in Sources */,
 				5A541D481E9D31E500593F99 /* RunLoopViewController.m in Sources */,
-				5A541D4C1E9D31E500593F99 /* UIAlertController+Blocks.m in Sources */,
+				5A541DF21E9DCD3300593F99 /* WFImage.m in Sources */,
 				5A541D301E9D31E500593F99 /* CoreDataManager.m in Sources */,
 				5A541D561E9D320200593F99 /* ViewController.m in Sources */,
 				5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
 				5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */,
 				5A541D321E9D31E500593F99 /* Person+CoreDataClass.m in Sources */,
+				5A541E0B1E9DFBE700593F99 /* Tools.m in Sources */,
 				5A541D331E9D31E500593F99 /* Person+CoreDataProperties.m in Sources */,
 				5A541D541E9D320200593F99 /* AppDelegate.m in Sources */,
 				5A541D351E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */,
 				5A541D391E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541CEB1E9D31D600593F99 /* GCDTableViewController.m in Sources */,
+				5A541DEC1E9DCBDF00593F99 /* WaterFallViewController.m in Sources */,
 				5A541D3F1E9D31E500593F99 /* MasonryTabBarController.m in Sources */,
 				5A541D3D1E9D31E500593F99 /* Example4Controller.m in Sources */,
-				5A541D4B1E9D31E500593F99 /* Tools.m in Sources */,
-				5A541D4A1E9D31E500593F99 /* LSAlertController.m in Sources */,
 				5A541CEA1E9D31D600593F99 /* GCDMethods.m in Sources */,
 				5A541D401E9D31E500593F99 /* UIView+LJC.m in Sources */,
-				5A541D491E9D31E500593F99 /* ASyncURLConnection.m in Sources */,
 				5A541D3B1E9D31E500593F99 /* Example2Controller.m in Sources */,
 				5A541D341E9D31E500593F99 /* TVDataSourceAndDelegate.m in Sources */,
 				5A541D361E9D31E500593F99 /* FileDownloadTableViewController.m in Sources */,
@@ -648,7 +715,7 @@
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5P7X92RVXH;
-				GCC_PREFIX_HEADER = "ios-Note/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "ios-Note/ios-NotePrefix.pch";
 				INFOPLIST_FILE = "ios-Note/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -666,7 +733,7 @@
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5P7X92RVXH;
-				GCC_PREFIX_HEADER = "ios-Note/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "ios-Note/ios-NotePrefix.pch";
 				INFOPLIST_FILE = "ios-Note/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
