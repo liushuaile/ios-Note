@@ -302,25 +302,7 @@
 			path = "ios-Note/Tools";
 			sourceTree = SOURCE_ROOT;
 		};
-		5AB0A13D1E8504B000105D17 = {
-			isa = PBXGroup;
-			children = (
-				5AB0A1481E8504B000105D17 /* ios-Note */,
-				5AB0A1471E8504B000105D17 /* Products */,
-				5A462D991E8A396E004139A6 /* Frameworks */,
-				F8D8FEAFD4DCE8ADDA6215D7 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		5AB0A1471E8504B000105D17 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5AB0A1461E8504B000105D17 /* ios-Note.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5AB0A1481E8504B000105D17 /* ios-Note */ = {
+		5A541D661E9DC40000593F99 /* ios-Note */ = {
 			isa = PBXGroup;
 			children = (
 				5A541CEC1E9D31E500593F99 /* Copy */,
@@ -341,19 +323,37 @@
 				5A541D521E9D320200593F99 /* ViewController.h */,
 				5A541D531E9D320200593F99 /* ViewController.m */,
 				5AB0A1491E8504B000105D17 /* Supporting Files */,
+				5A541D611E9D325800593F99 /* main.m */,
+				5A541D621E9D325800593F99 /* PrefixHeader.pch */,
+				5A541D641E9D408C00593F99 /* ios-Note.h */,
 			);
-			name = "ios-Note";
-			path = Note;
+			path = "ios-Note";
+			sourceTree = "<group>";
+		};
+		5AB0A13D1E8504B000105D17 = {
+			isa = PBXGroup;
+			children = (
+				5A541D661E9DC40000593F99 /* ios-Note */,
+				5AB0A1471E8504B000105D17 /* Products */,
+				5A462D991E8A396E004139A6 /* Frameworks */,
+				F8D8FEAFD4DCE8ADDA6215D7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5AB0A1471E8504B000105D17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0A1461E8504B000105D17 /* ios-Note.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5AB0A1491E8504B000105D17 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A541D611E9D325800593F99 /* main.m */,
-				5A541D621E9D325800593F99 /* PrefixHeader.pch */,
-				5A541D641E9D408C00593F99 /* ios-Note.h */,
 			);
 			name = "Supporting Files";
+			path = ../Note;
 			sourceTree = "<group>";
 		};
 		F8D8FEAFD4DCE8ADDA6215D7 /* Pods */ = {
@@ -537,6 +537,7 @@
 				5A541D581E9D321900593F99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../Note;
 			sourceTree = "<group>";
 		};
 		5A541D591E9D321900593F99 /* Main.storyboard */ = {
@@ -545,6 +546,7 @@
 				5A541D5A1E9D321900593F99 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../Note;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
