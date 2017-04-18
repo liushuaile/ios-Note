@@ -12,4 +12,11 @@
 
 + (NSString*)dictionaryToJson:(NSDictionary *)dic;
 
+//颜色16进制转换 52c332
++ (UIColor *)getColor:(NSString *)hexColor;
+
++ (NSInteger)getToInt:(NSString*)strtemp;
+
++ (int)convertToInt:(NSString*)strtemp;
+
 @end

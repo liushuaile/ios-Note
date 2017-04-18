@@ -70,17 +70,17 @@
     NSInteger numSections = [self.collectionView numberOfSections];
     for(NSInteger section = 0; section < numSections; section++){
         
-        indexPath = [NSIndexPath indexPathWithIndex:section];
-        UICollectionViewLayoutAttributes *attributesHeader = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
-        [self.attributesArry addObject:attributesHeader];
-
-        
         NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
         for(NSInteger item = 0; item < numItems; item++){
             indexPath = [NSIndexPath indexPathForItem:item inSection:section];
             UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForItemAtIndexPath:indexPath];
             [self.attributesArry addObject:attributes];
         }
+        
+        indexPath = [NSIndexPath indexPathWithIndex:section];
+        UICollectionViewLayoutAttributes *attributesHeader = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
+        [self.attributesArry addObject:attributesHeader];
+
     }
     //end of first section
 
@@ -112,6 +112,7 @@
         itemHeight = [self.delegate wfLaout:self itemHeightForWidth:itemWidth atIndexPath:indexPath];
     }
     
+    //找出最短的那一列
     __block NSNumber *minIndex = @0;
     [self.maxYDic enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, NSNumber * _Nonnull obj, BOOL * _Nonnull stop) {
         if ([self.maxYDic[minIndex] floatValue] > obj.floatValue) {
@@ -119,8 +120,9 @@
         }
     }];
     
+    //根据最短列的列数计算item的x值
     CGFloat itemX = self.sectionInset.left + (self.columnSpacing + itemWidth) * minIndex.integerValue;
-    
+    //item的y值 = 最短列的最大y值 + 行间距
     CGFloat itemY = [self.maxYDic[minIndex] floatValue] + self.rowSpacing;
     
     attributes.frame = CGRectMake(itemX, itemY, itemWidth, itemHeight);
@@ -133,9 +135,9 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:elementKind withIndexPath:indexPath];
 
-//    CGPoint contentOffset = self.collectionView.contentOffset;
-//    CGFloat y = 5 + contentOffset.y;
-    attributes.frame = CGRectMake(5, 5, kDeviceWidth-10, 150);
+    CGPoint contentOffset = self.collectionView.contentOffset;
+    CGFloat y_ = 5 + contentOffset.y + 64;
+    attributes.frame = CGRectMake(5, y_, kDeviceWidth-10, 150);
     return attributes;
 }
 

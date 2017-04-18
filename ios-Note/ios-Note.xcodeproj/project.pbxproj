@@ -57,6 +57,7 @@
 		5A541E0D1E9DFBE700593F99 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E081E9DFBE700593F99 /* UIViewController+Logging.m */; };
 		5A541E0F1E9DFCB200593F99 /* img001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E0E1E9DFCB200593F99 /* img001.jpg */; };
 		5A541E111E9DFDC500593F99 /* img002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E101E9DFDC500593F99 /* img002.jpg */; };
+		5ACC2E591E9FAE010055B571 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC2E581E9FAE010055B571 /* BlockViewController.m */; };
 		C321BB2804A3A580903231D4 /* libPods-ios-Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +150,8 @@
 		5A541E0E1E9DFCB200593F99 /* img001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img001.jpg; sourceTree = "<group>"; };
 		5A541E101E9DFDC500593F99 /* img002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img002.jpg; sourceTree = "<group>"; };
 		5AB0A1461E8504B000105D17 /* ios-Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACC2E571E9FAE010055B571 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		5ACC2E581E9FAE010055B571 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-Note.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EE8B43D0564E69C4B07747 /* Pods-ios-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-Note/Pods-ios-Note.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +331,8 @@
 				5A541D4F1E9D320200593F99 /* AppDelegate.m */,
 				5A541D521E9D320200593F99 /* ViewController.h */,
 				5A541D531E9D320200593F99 /* ViewController.m */,
+				5ACC2E571E9FAE010055B571 /* BlockViewController.h */,
+				5ACC2E581E9FAE010055B571 /* BlockViewController.m */,
 				5AB0A1491E8504B000105D17 /* Supporting Files */,
 				5A541D611E9D325800593F99 /* main.m */,
 				5A541D621E9D325800593F99 /* ios-NotePrefix.pch */,
@@ -582,6 +587,7 @@
 				5A541D541E9D320200593F99 /* AppDelegate.m in Sources */,
 				5A541D351E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */,
+				5ACC2E591E9FAE010055B571 /* BlockViewController.m in Sources */,
 				5A541D391E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541CEB1E9D31D600593F99 /* GCDTableViewController.m in Sources */,
 				5A541DEC1E9DCBDF00593F99 /* WaterFallViewController.m in Sources */,

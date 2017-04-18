@@ -69,7 +69,14 @@
         NSLog(@"contentOffset_Y:%f",contentOffset.y);
         
         //此处监听坐标变化，重置collectionView Header位置坐标
+//        [self.WFLayout prepareLayout];
+        [self.collectionView setCollectionViewLayout:self.WFLayout animated:NO];
     }
+}
+
+- (void)dealloc {
+    
+    [self.collectionView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 - (NSMutableArray *)images {

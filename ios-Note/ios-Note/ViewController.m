@@ -10,7 +10,7 @@
 #import "TVDataSourceAndDelegate.h"
 #import "GCDTableViewController.h"
 #import "WaterFallViewController.h"
-
+#import "BlockViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 
@@ -33,12 +33,9 @@ static NSString * const cellIdentifier = @"cell";
     //隐藏/去掉 导航栏返回按钮中的文字,实现机制将字体上移出视图之外。
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
                                                          forBarMetrics:UIBarMetricsDefault];
-
     self.tableView.delegate = self.tvDelegate;
     self.tableView.dataSource = self.tvDelegate;
-
 //    [self SSKeychainTest];
-
 }
 
 
@@ -51,14 +48,13 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", @"Block", nil];
     }
     return _dataArray;
 }
 
 - (TVDataSourceAndDelegate *)tvDelegate {
     if (_tvDelegate == nil) {
-        
         __weak typeof(self) weakSelf = self;
         _tvDelegate = [[TVDataSourceAndDelegate alloc] initWithItems:self.dataArray cellIdentifier:cellIdentifier configureBlock:^(UITableViewCell *cell, NSString *item, NSIndexPath *indexPath, NSInteger style) {
             
@@ -107,11 +103,16 @@ static NSString * const cellIdentifier = @"cell";
                         break;
                     case 7: {
                         WaterFallViewController *WFViewControler = [[WaterFallViewController alloc] init];
-                        [self.navigationController pushViewController:WFViewControler animated:YES];
+                        [weakSelf.navigationController pushViewController:WFViewControler animated:YES];
+                    }
+                        break;
+                    case 8: {
+                        BlockViewController *vc = [[BlockViewController alloc] init];
+                        vc.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+                        [weakSelf.navigationController pushViewController:vc animated:YES];
                     }
                         break;
                     default:
-                        
                         break;
                 }
             }
@@ -124,7 +125,6 @@ static NSString * const cellIdentifier = @"cell";
 #pragma mark- Methods
 
 - (void)SSKeychainTest {
-    
     NSString *userName = @"slliu";
     NSString *password = @"123123";
     NSString *bundleID = [NSBundle mainBundle].bundleIdentifier;
@@ -145,7 +145,6 @@ static NSString * const cellIdentifier = @"cell";
     
     id obj1 = [[NSObject alloc]init];
     printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj1)));
-    
 }
 
 @end
