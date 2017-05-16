@@ -1,9 +1,10 @@
 //
 //  Person+CoreDataProperties.h
-//  Note
+//  ios-Note
 //
-//  Created by SL on 28/03/2017.
+//  Created by SL on 07/05/2017.
 //  Copyright © 2017 Sam. All rights reserved.
+//  This file was automatically generated and should not be edited.
 //
 
 #import "Person+CoreDataClass.h"
@@ -15,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Person *> *)fetchRequest;
 
-@property (nonatomic) int32_t age;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nonatomic) int64_t age;
 
 @end
 

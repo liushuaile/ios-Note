@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  ios-Note
+
+  Created by SL on 26/04/2017.
+  Copyright © 2017 Sam. All rights reserved.
+ 
+ 1、
+ 第一个参数key是从Localizable.strings这个文件中读取对应的key-value值。
+ 第二个参数comment可以是nil，可以是一段为空的字符串，也可以是对key的注释。
+ 
+ #define NSLocalizedString(key, comment) \
+ [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+ 
+ 
+ 2、
+ 多语言添加
+ PROJECT --> localizations --> 点击“+”添加语言 --> 只留勾选项“localizable.string” --> 点击“finish” -->
+ 
+ 
+ 
+*/
+
+
+"LStringCode00001" = "Context(base)";

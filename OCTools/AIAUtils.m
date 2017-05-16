@@ -29,6 +29,35 @@ BOOL isNumber (char ch)
 
 @implementation AIAUtils
 
+#pragma mark- 金额数字处理
+
++(double) PV:(double)rate:(double)nper:(double)pmt{
+    return pmt / rate * (1 - pow(1 + rate, -nper));
+}
+
+
++(double)PMT:(double)rateForPeriod :(NSInteger)numberOfPayments :(double)loanAmount :(double)futureValue :(NSInteger)type
+{
+    double q;
+    
+    q = pow(1 + rateForPeriod, numberOfPayments);
+    
+    return (rateForPeriod * (futureValue + (q * loanAmount))) / ((-1 + q) * (1 + rateForPeriod * (type)));
+}
+
+
++(double)Roundup:(double)num :(int) digit{
+    double rate;
+    if(digit == 0){
+        rate = 1;
+    }else{
+        rate =  pow(10.0 , digit) ;
+    }
+    
+    return ((long long)(num * rate + 0.5)) / rate;
+}
+
+
 + (BOOL) isValidNumber:(NSString*)value{
     const char *cvalue = [value UTF8String];
     int len = (int)strlen(cvalue);

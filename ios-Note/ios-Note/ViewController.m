@@ -11,6 +11,7 @@
 #import "GCDTableViewController.h"
 #import "WaterFallViewController.h"
 #import "BlockViewController.h"
+#import "CGContextViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 
@@ -36,6 +37,7 @@ static NSString * const cellIdentifier = @"cell";
     self.tableView.delegate = self.tvDelegate;
     self.tableView.dataSource = self.tvDelegate;
 //    [self SSKeychainTest];
+    
 }
 
 
@@ -48,15 +50,17 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", @"Block", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", @"Block", NSLocalizedString(@"LStringCode00001", nil),@"金额精度处理", nil];
     }
     return _dataArray;
 }
 
 - (TVDataSourceAndDelegate *)tvDelegate {
     if (_tvDelegate == nil) {
-        __weak typeof(self) weakSelf = self;
+//        __weak typeof(self) weakSelf = self;
+        @weakify_self;
         _tvDelegate = [[TVDataSourceAndDelegate alloc] initWithItems:self.dataArray cellIdentifier:cellIdentifier configureBlock:^(UITableViewCell *cell, NSString *item, NSIndexPath *indexPath, NSInteger style) {
+            @strongify_self;
             
             if (style == CellControlLoadData) {
                 cell.textLabel.text = item;
@@ -81,35 +85,45 @@ static NSString * const cellIdentifier = @"cell";
                 NSInteger row = indexPath.row;
                 switch (row) {
                     case 0:
-                        [weakSelf performSegueWithIdentifier:@"GotoGCD" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoGCD" sender:nil];
                         break;
                     case 1:
-                        [weakSelf performSegueWithIdentifier:@"GotoCoreData" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoCoreData" sender:nil];
                         break;
                     case 2:
-                        [weakSelf performSegueWithIdentifier:@"GotoFileDownload" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoFileDownload" sender:nil];
                         break;
                     case 4:
-                        [weakSelf performSegueWithIdentifier:@"GotoRunLoop" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoRunLoop" sender:nil];
                         break;
                     case 3:
-                        [weakSelf performSegueWithIdentifier:@"GotoCopy" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoCopy" sender:nil];
                         break;
                     case 5:
-                        [weakSelf performSegueWithIdentifier:@"GotoMasonry" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoMasonry" sender:nil];
                         break;
                     case 6:
-                        [weakSelf performSegueWithIdentifier:@"GotoRSA" sender:nil];
+                        [self performSegueWithIdentifier:@"GotoRSA" sender:nil];
                         break;
                     case 7: {
                         WaterFallViewController *WFViewControler = [[WaterFallViewController alloc] init];
-                        [weakSelf.navigationController pushViewController:WFViewControler animated:YES];
+                        [self.navigationController pushViewController:WFViewControler animated:YES];
                     }
                         break;
                     case 8: {
                         BlockViewController *vc = [[BlockViewController alloc] init];
                         vc.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
-                        [weakSelf.navigationController pushViewController:vc animated:YES];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }
+                        break;
+                    case 9: {
+                        CGContextViewController *vc = [[CGContextViewController alloc] init];
+                        vc.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }
+                        break;
+                    case 10: {
+                        
                     }
                         break;
                     default:
@@ -145,6 +159,24 @@ static NSString * const cellIdentifier = @"cell";
     
     id obj1 = [[NSObject alloc]init];
     printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+}
+
+#pragma mark - 金额精度处理
+-(void)AmountTest {
+    double d1 = 0.01;
+    double d2 = 999999;
+    double d3 = d1 * d2;
+    NSLog(@"%f",d3);
+    
+    NSDecimalNumber* n1 = [NSDecimalNumber       decimalNumberWithString:[NSString    stringWithFormat:@"%f",d1]];
+    
+    NSDecimalNumber* n2 = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%f",d2]];
+    
+    NSDecimalNumber* n3 = [n1 decimalNumberByMultiplyingBy:n2];
+    
+    NSLog(@"%@",n3);
+    
+    
 }
 
 @end

@@ -85,7 +85,7 @@
     NSData* da = [strtemp dataUsingEncoding:enc];
     return [da length];
 }
-
+//计算中英文字符串长度
 + (int)convertToInt:(NSString*)strtemp {
     int strlength = 0;
     char* p = (char*)[strtemp cStringUsingEncoding:NSUnicodeStringEncoding];

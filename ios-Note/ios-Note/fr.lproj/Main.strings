@@ -1,0 +1,63 @@
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "21w-j5-sBY"; */
+"21w-j5-sBY.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "当前下载进度:00.00%"; ObjectID = "58Z-j6-iS5"; */
+"58Z-j6-iS5.text" = "当前下载进度:00.00%";
+
+/* Class = "UINavigationItem"; title = "RunLoop"; ObjectID = "6Gt-mq-T9b"; */
+"6Gt-mq-T9b.title" = "RunLoop";
+
+/* Class = "UIViewController"; title = "HOME"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "HOME";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "NnA-mj-wA0"; */
+"NnA-mj-wA0.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "GCD"; ObjectID = "Qbj-7G-bCI"; */
+"Qbj-7G-bCI.title" = "GCD";
+
+/* Class = "UITableViewController"; title = "FileDownload"; ObjectID = "RaF-eL-n8q"; */
+"RaF-eL-n8q.title" = "FileDownload";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Rfj-yy-eEU"; */
+"Rfj-yy-eEU.text" = "Title";
+
+/* Class = "UITableViewController"; title = "CoreData"; ObjectID = "UUn-bp-22U"; */
+"UUn-bp-22U.title" = "CoreData";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "VvN-Oq-5lq"; */
+"VvN-Oq-5lq.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "FileDownload"; ObjectID = "WEA-CI-uyx"; */
+"WEA-CI-uyx.title" = "FileDownload";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Yzn-bw-0uM"; */
+"Yzn-bw-0uM.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "ios-Note"; ObjectID = "brX-iH-BYF"; */
+"brX-iH-BYF.title" = "ios-Note";
+
+/* Class = "UINavigationItem"; title = "Copy"; ObjectID = "cKn-bY-ijd"; */
+"cKn-bY-ijd.title" = "Copy";
+
+/* Class = "UINavigationItem"; title = "RSA"; ObjectID = "jHc-gt-E5M"; */
+"jHc-gt-E5M.title" = "RSA";
+
+/* Class = "UINavigationItem"; title = "Masonry"; ObjectID = "lAc-jJ-wJL"; */
+"lAc-jJ-wJL.title" = "Masonry";
+
+/* Class = "UILabel"; text = "当前下载进度:00.00%"; ObjectID = "mM2-si-Riv"; */
+"mM2-si-Riv.text" = "当前下载进度:00.00%";
+
+/* Class = "UIButton"; normalTitle = "开始下载"; ObjectID = "pzV-s2-YPm"; */
+"pzV-s2-YPm.normalTitle" = "开始下载";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uFc-82-ExN"; */
+"uFc-82-ExN.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "CoreData"; ObjectID = "xD6-YU-UTt"; */
+"xD6-YU-UTt.title" = "CoreData";
+
+/* Class = "UILabel"; text = "当前下载进度:00.00%"; ObjectID = "xlY-WF-Tgd"; */
+"xlY-WF-Tgd.text" = "当前下载进度:00.00%";

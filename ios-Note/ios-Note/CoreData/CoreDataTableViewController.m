@@ -35,7 +35,7 @@ static NSString * const cellIdentifier = @"coreDataCell";
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark- cunstom accessors
+#pragma mark- Customer Accessors
 - (CoreDataManager *)CDManager {
     if (_CDManager == nil) {
         _CDManager = [[CoreDataManager alloc] init];

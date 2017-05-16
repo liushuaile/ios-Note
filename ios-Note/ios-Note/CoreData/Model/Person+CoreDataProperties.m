@@ -1,9 +1,10 @@
 //
 //  Person+CoreDataProperties.m
-//  Note
+//  ios-Note
 //
-//  Created by SL on 28/03/2017.
+//  Created by SL on 07/05/2017.
 //  Copyright © 2017 Sam. All rights reserved.
+//  This file was automatically generated and should not be edited.
 //
 
 #import "Person+CoreDataProperties.h"
@@ -14,7 +15,7 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"Person"];
 }
 
-@dynamic age;
 @dynamic name;
+@dynamic age;
 
 @end
