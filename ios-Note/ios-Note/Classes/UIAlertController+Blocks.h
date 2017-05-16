@@ -74,22 +74,3 @@ typedef void (^UIAlertControllerCompletionBlock) (UIAlertController * __nonnull 
 @property (readonly, nonatomic) NSInteger destructiveButtonIndex;
 
 @end
-
-/*
- [UIAlertController showAlertInViewController:self
- withTitle:@"Test Alert"
- message:@"Test Message"
- cancelButtonTitle:@"Cancel"
- destructiveButtonTitle:@"Delete"
- otherButtonTitles:@[@"First Other", @"Second Other"]
- tapBlock:^(UIAlertController *controller, UIAlertAction *action, NSInteger buttonIndex){
- 
- if (buttonIndex == controller.cancelButtonIndex) {
- NSLog(@"Cancel Tapped");
- } else if (buttonIndex == controller.destructiveButtonIndex) {
- NSLog(@"Delete Tapped");
- } else if (buttonIndex >= controller.firstOtherButtonIndex) {
- NSLog(@"Other Button Index %ld", (long)buttonIndex - controller.firstOtherButtonIndex);
- }
- }];
- */

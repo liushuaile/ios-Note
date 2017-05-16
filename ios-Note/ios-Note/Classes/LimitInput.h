@@ -12,7 +12,6 @@
 #define DECLARE_PROPERTY(className) \
 @interface className (Limit) @end
 
-//声明类别
 DECLARE_PROPERTY(UITextField)
 DECLARE_PROPERTY(UITextView)
 

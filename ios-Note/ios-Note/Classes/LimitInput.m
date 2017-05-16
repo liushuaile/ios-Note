@@ -7,7 +7,6 @@
 #import <objc/runtime.h>
 
 
-//给类别添加属性
 #define RUNTIME_ADD_PROPERTY(propertyName)      \
 -(id)valueForUndefinedKey:(NSString *)key {     \
 if ([key isEqualToString:propertyName]) {   \
@@ -24,18 +23,16 @@ objc_setAssociatedObject(self, key.UTF8String, value, OBJC_ASSOCIATION_RETAIN); 
 #define IMPLEMENT_PROPERTY(className) \
 @implementation className (Limit) RUNTIME_ADD_PROPERTY(PROPERTY_NAME) @end
 
-
-//类别实现
 IMPLEMENT_PROPERTY(UITextField)
 IMPLEMENT_PROPERTY(UITextView)
 
 @implementation LimitInput
 
 
-//+(void) load {
-//    [super load];
-//    [LimitInput sharedInstance];
-//}
++(void) load {
+    [super load];
+    [LimitInput sharedInstance];
+}
 
     
 +(LimitInput *) sharedInstance {
