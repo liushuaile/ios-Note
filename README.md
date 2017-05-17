@@ -18,6 +18,3 @@ pod 'SLlibs'
 
 交流学习简书：
 http://www.jianshu.com/u/58363414ac08
-
-merge test:
-master change A 期望结果，merge到branch 0.0.3
