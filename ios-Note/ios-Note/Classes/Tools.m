@@ -14,34 +14,32 @@
     if (jsonString == nil) {
         return nil;
     }
-    
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    
     NSError *err;
-    
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
-                         
                                                         options:NSJSONReadingMutableContainers
-                         
                                                           error:&err];
-    
     if(err) {
         NSLog(@"json解析失败：%@",err);
-        
         return nil;
     }
-    
     return dic;
 }
 
 + (NSString*)dictionaryToJson:(NSDictionary *)dic {
-    
     NSError *parseError = nil;
-    
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
-    
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
+}
+
+//0x000000
+- (UIColor*)colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue
+{
+    return [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0
+                           green:((float)((hexValue & 0xFF00) >> 8))/255.0
+                            blue:((float)(hexValue & 0xFF))/255.0
+                           alpha:alphaValue];
 }
 
 + (UIColor *)getColor:(NSString *)hexColor {
