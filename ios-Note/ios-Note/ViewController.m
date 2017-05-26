@@ -12,6 +12,7 @@
 #import "WaterFallViewController.h"
 #import "BlockViewController.h"
 #import "CGContextViewController.h"
+#import "OperationViewController.h"
 
 static NSString * const cellIdentifier = @"cell";
 
@@ -50,7 +51,7 @@ static NSString * const cellIdentifier = @"cell";
 
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", @"Block", NSLocalizedString(@"LStringCode00001", nil),@"金额精度处理", nil];
+        _dataArray = [NSArray arrayWithObjects:@"GCD", @"CoreData", @"FileDownload", @"Copy", @"RunLoop", @"Masonry", @"RSA", @"WaterFall", @"Block", NSLocalizedString(@"LStringCode00001", nil),@"金额精度处理",@"NSOperation(异步任务依赖)", nil];
     }
     return _dataArray;
 }
@@ -123,6 +124,18 @@ static NSString * const cellIdentifier = @"cell";
                     }
                         break;
                     case 10: {
+                        
+                    }
+                        break;
+                        
+                    case 11: {
+                        OperationViewController *vc = [OperationViewController new];
+                        vc.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+                        [self.navigationController pushViewController:vc animated:YES];
+                    }
+                        break;
+                        
+                    case 12: {
                         
                     }
                         break;

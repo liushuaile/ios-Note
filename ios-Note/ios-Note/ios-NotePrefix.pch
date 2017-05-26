@@ -19,7 +19,7 @@
 #import "Masonry.h"
 #import "MMPlaceHolder.h"
 #import "SSKeychain.h"
-
+#import "AFNetworking.h"
 
 #ifndef    weakify_self
 #if __has_feature(objc_arc)

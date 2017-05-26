@@ -229,7 +229,7 @@ static int static_global_var = 2;
 
 }
 
-- (void)run {
+- (void)run:(void(^)())comBlock {
     
     [self setBlock:^(NSString *string, BlockViewController *obj_) {
         NSLog(@"block %@",string);
@@ -265,7 +265,6 @@ static int static_global_var = 2;
         [array addObject:obj];
         //        array = [NSMutableArray new];
     };
-
 }
 
 /*

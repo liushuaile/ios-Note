@@ -12,6 +12,7 @@
 		5A3388021ECB3A0300FA9DC4 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388011ECB3A0300FA9DC4 /* UIAlertController+Blocks.m */; };
 		5A3388051ECB3A8200FA9DC4 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */; };
 		5A3388071ECB3B1600FA9DC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388061ECB3B1600FA9DC4 /* README.md */; };
+		5A3388301ECD1FF500FA9DC4 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A33882F1ECD1FF500FA9DC4 /* Tools.m */; };
 		5A541CEA1E9D31D600593F99 /* GCDMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CE71E9D31D600593F99 /* GCDMethods.m */; };
 		5A541CEB1E9D31D600593F99 /* GCDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CE91E9D31D600593F99 /* GCDTableViewController.m */; };
 		5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CEE1E9D31E500593F99 /* CopyViewController.m */; };
@@ -53,9 +54,10 @@
 		5A541DFD1E9DFB7200593F99 /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A541DFB1E9DFB7200593F99 /* icon@3x.png */; };
 		5A541E091E9DFBE700593F99 /* ASyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */; };
 		5A541E0A1E9DFBE700593F99 /* LSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E021E9DFBE700593F99 /* LSAlertController.m */; };
-		5A541E0B1E9DFBE700593F99 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541E041E9DFBE700593F99 /* Tools.m */; };
 		5A541E0F1E9DFCB200593F99 /* img001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E0E1E9DFCB200593F99 /* img001.jpg */; };
 		5A541E111E9DFDC500593F99 /* img002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A541E101E9DFDC500593F99 /* img002.jpg */; };
+		5A77CB7B1ED7139500EE95BC /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77CB7A1ED7139500EE95BC /* OperationViewController.m */; };
+		5A77CB7E1ED7190D00EE95BC /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77CB7D1ED7190D00EE95BC /* AsyncOperation.m */; };
 		5AA77A3E1EA9A09900052A77 /* CGContextAddCurveToPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA77A311EA9A09900052A77 /* CGContextAddCurveToPoint.png */; };
 		5AA77A3F1EA9A09900052A77 /* CGContextAddQuadCurveToPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA77A321EA9A09900052A77 /* CGContextAddQuadCurveToPoint.png */; };
 		5AA77A401EA9A09900052A77 /* CGContextObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA77A341EA9A09900052A77 /* CGContextObject.m */; };
@@ -82,6 +84,8 @@
 		5A3388031ECB3A8200FA9DC4 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
 		5A3388061ECB3B1600FA9DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A33882E1ECD1FF500FA9DC4 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		5A33882F1ECD1FF500FA9DC4 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		5A462D9A1E8A396E004139A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5A541CE61E9D31D600593F99 /* GCDMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMethods.h; sourceTree = "<group>"; };
 		5A541CE71E9D31D600593F99 /* GCDMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMethods.m; sourceTree = "<group>"; };
@@ -154,10 +158,12 @@
 		5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASyncURLConnection.m; sourceTree = "<group>"; };
 		5A541E011E9DFBE700593F99 /* LSAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAlertController.h; sourceTree = "<group>"; };
 		5A541E021E9DFBE700593F99 /* LSAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAlertController.m; sourceTree = "<group>"; };
-		5A541E031E9DFBE700593F99 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		5A541E041E9DFBE700593F99 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		5A541E0E1E9DFCB200593F99 /* img001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img001.jpg; sourceTree = "<group>"; };
 		5A541E101E9DFDC500593F99 /* img002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img002.jpg; sourceTree = "<group>"; };
+		5A77CB791ED7139500EE95BC /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
+		5A77CB7A1ED7139500EE95BC /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
+		5A77CB7C1ED7190D00EE95BC /* AsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperation.h; sourceTree = "<group>"; };
+		5A77CB7D1ED7190D00EE95BC /* AsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperation.m; sourceTree = "<group>"; };
 		5AA77A311EA9A09900052A77 /* CGContextAddCurveToPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CGContextAddCurveToPoint.png; sourceTree = "<group>"; };
 		5AA77A321EA9A09900052A77 /* CGContextAddQuadCurveToPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CGContextAddQuadCurveToPoint.png; sourceTree = "<group>"; };
 		5AA77A331EA9A09900052A77 /* CGContextObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextObject.h; sourceTree = "<group>"; };
@@ -206,6 +212,8 @@
 		5A3387F91ECB39CD00FA9DC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5A33882E1ECD1FF500FA9DC4 /* Tools.h */,
+				5A33882F1ECD1FF500FA9DC4 /* Tools.m */,
 				5A3388061ECB3B1600FA9DC4 /* README.md */,
 				5A3388031ECB3A8200FA9DC4 /* RSAEncryptor.h */,
 				5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */,
@@ -382,6 +390,7 @@
 				5A541D4F1E9D320200593F99 /* AppDelegate.m */,
 				5A541D521E9D320200593F99 /* ViewController.h */,
 				5A541D531E9D320200593F99 /* ViewController.m */,
+				5A77CB7F1ED78E3C00EE95BC /* AsyncOperation */,
 				5ACC2E571E9FAE010055B571 /* BlockViewController.h */,
 				5ACC2E581E9FAE010055B571 /* BlockViewController.m */,
 				5AB0A1491E8504B000105D17 /* Supporting Files */,
@@ -435,10 +444,19 @@
 				5A541E001E9DFBE700593F99 /* ASyncURLConnection.m */,
 				5A541E011E9DFBE700593F99 /* LSAlertController.h */,
 				5A541E021E9DFBE700593F99 /* LSAlertController.m */,
-				5A541E031E9DFBE700593F99 /* Tools.h */,
-				5A541E041E9DFBE700593F99 /* Tools.m */,
 			);
 			path = tools;
+			sourceTree = "<group>";
+		};
+		5A77CB7F1ED78E3C00EE95BC /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				5A77CB791ED7139500EE95BC /* OperationViewController.h */,
+				5A77CB7A1ED7139500EE95BC /* OperationViewController.m */,
+				5A77CB7C1ED7190D00EE95BC /* AsyncOperation.h */,
+				5A77CB7D1ED7190D00EE95BC /* AsyncOperation.m */,
+			);
+			name = AsyncOperation;
 			sourceTree = "<group>";
 		};
 		5AA77A301EA9A09900052A77 /* CGContext */ = {
@@ -638,8 +656,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3388301ECD1FF500FA9DC4 /* Tools.m in Sources */,
 				5AA77A401EA9A09900052A77 /* CGContextObject.m in Sources */,
 				5A541DEF1E9DCCA900593F99 /* WaterFallLayout.m in Sources */,
+				5A77CB7E1ED7190D00EE95BC /* AsyncOperation.m in Sources */,
 				5A541D3A1E9D31E500593F99 /* Example1Controller.m in Sources */,
 				5A541DF71E9DF75700593F99 /* WFCollectionViewCell.m in Sources */,
 				5A3387FF1ECB39CD00FA9DC4 /* UIViewController+Tracking.m in Sources */,
@@ -665,7 +685,6 @@
 				5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
 				5AA77A441EA9A09900052A77 /* RGBColor.m in Sources */,
 				5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */,
-				5A541E0B1E9DFBE700593F99 /* Tools.m in Sources */,
 				5A541D541E9D320200593F99 /* AppDelegate.m in Sources */,
 				5A541D351E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */,
@@ -674,6 +693,7 @@
 				5A541CEB1E9D31D600593F99 /* GCDTableViewController.m in Sources */,
 				5A541DEC1E9DCBDF00593F99 /* WaterFallViewController.m in Sources */,
 				5A541D3F1E9D31E500593F99 /* MasonryTabBarController.m in Sources */,
+				5A77CB7B1ED7139500EE95BC /* OperationViewController.m in Sources */,
 				5A541D3D1E9D31E500593F99 /* Example4Controller.m in Sources */,
 				5A541CEA1E9D31D600593F99 /* GCDMethods.m in Sources */,
 				5A541D401E9D31E500593F99 /* UIView+LJC.m in Sources */,
