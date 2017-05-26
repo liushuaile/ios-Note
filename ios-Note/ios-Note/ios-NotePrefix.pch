@@ -20,6 +20,7 @@
 #import "MMPlaceHolder.h"
 #import "SSKeychain.h"
 #import "AFNetworking.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #ifndef    weakify_self
 #if __has_feature(objc_arc)

@@ -21,8 +21,8 @@
 		5A541D341E9D31E500593F99 /* TVDataSourceAndDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CFB1E9D31E500593F99 /* TVDataSourceAndDelegate.m */; };
 		5A541D351E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CFE1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m */; };
 		5A541D361E9D31E500593F99 /* FileDownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D001E9D31E500593F99 /* FileDownloadTableViewController.m */; };
-		5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m */; };
-		5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m */; };
+		5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m.decrepated in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m.decrepated */; };
+		5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m.decrepated in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m.decrepated */; };
 		5A541D391E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D061E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m */; };
 		5A541D3A1E9D31E500593F99 /* Example1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D091E9D31E500593F99 /* Example1Controller.m */; };
 		5A541D3B1E9D31E500593F99 /* Example2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541D0B1E9D31E500593F99 /* Example2Controller.m */; };
@@ -103,10 +103,10 @@
 		5A541CFE1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
 		5A541CFF1E9D31E500593F99 /* FileDownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadTableViewController.h; sourceTree = "<group>"; };
 		5A541D001E9D31E500593F99 /* FileDownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadTableViewController.m; sourceTree = "<group>"; };
-		5A541D011E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionBlockDownloadFileViewController.h; sourceTree = "<group>"; };
-		5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionBlockDownloadFileViewController.m; sourceTree = "<group>"; };
-		5A541D031E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDelegateDownloadFileViewController.h; sourceTree = "<group>"; };
-		5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDelegateDownloadFileViewController.m; sourceTree = "<group>"; };
+		5A541D011E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.h.decrepated */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSURLSessionBlockDownloadFileViewController.h.decrepated; sourceTree = "<group>"; };
+		5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m.decrepated */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSURLSessionBlockDownloadFileViewController.m.decrepated; sourceTree = "<group>"; };
+		5A541D031E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.h.decrepated */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSURLSessionDelegateDownloadFileViewController.h.decrepated; sourceTree = "<group>"; };
+		5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m.decrepated */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSURLSessionDelegateDownloadFileViewController.m.decrepated; sourceTree = "<group>"; };
 		5A541D051E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionOfflineResumeDownloadFileViewController.h; sourceTree = "<group>"; };
 		5A541D061E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionOfflineResumeDownloadFileViewController.m; sourceTree = "<group>"; };
 		5A541D081E9D31E500593F99 /* Example1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example1Controller.h; sourceTree = "<group>"; };
@@ -296,16 +296,16 @@
 		5A541CFC1E9D31E500593F99 /* FileDownload */ = {
 			isa = PBXGroup;
 			children = (
-				5A541CFD1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.h */,
-				5A541CFE1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m */,
 				5A541CFF1E9D31E500593F99 /* FileDownloadTableViewController.h */,
 				5A541D001E9D31E500593F99 /* FileDownloadTableViewController.m */,
-				5A541D011E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.h */,
-				5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m */,
-				5A541D031E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.h */,
-				5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m */,
+				5A541CFD1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.h */,
+				5A541CFE1E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m */,
 				5A541D051E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.h */,
 				5A541D061E9D31E500593F99 /* NSURLSessionOfflineResumeDownloadFileViewController.m */,
+				5A541D011E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.h.decrepated */,
+				5A541D021E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m.decrepated */,
+				5A541D031E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.h.decrepated */,
+				5A541D041E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m.decrepated */,
 			);
 			name = FileDownload;
 			path = "ios-Note/FileDownload";
@@ -682,9 +682,9 @@
 				5A541D561E9D320200593F99 /* ViewController.m in Sources */,
 				5AA77A481EA9A0D700052A77 /* CGContextViewController.m in Sources */,
 				5A3388071ECB3B1600FA9DC4 /* README.md in Sources */,
-				5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m in Sources */,
+				5A541D371E9D31E500593F99 /* NSURLSessionBlockDownloadFileViewController.m.decrepated in Sources */,
 				5AA77A441EA9A09900052A77 /* RGBColor.m in Sources */,
-				5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m in Sources */,
+				5A541D381E9D31E500593F99 /* NSURLSessionDelegateDownloadFileViewController.m.decrepated in Sources */,
 				5A541D541E9D320200593F99 /* AppDelegate.m in Sources */,
 				5A541D351E9D31E500593F99 /* AFNetworkingOfflineResumeDownloadFileViewController.m in Sources */,
 				5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */,

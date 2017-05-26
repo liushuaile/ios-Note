@@ -182,6 +182,22 @@
         failure(task,error);
     }];
 }
+
+/*
+    start任务，默认在当前线程执行，但是NSBlockOperation还有一个方法，addExecutionBlock:，此方法可以给Operation添加多个执行Block。这样Operation中的任务会并发执行，它会在主线程和其它多个线程执行这些任务。addExecutionBlock:必须在start方法之前执行。
+ */
+- (void)addExecutionOperation {
+    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"%@",[NSThread currentThread]);
+    }];
+    
+    for (int i=0; i<5; i++) {
+        [operation addExecutionBlock:^{
+            NSLog(@"%d:%@",i,[NSThread currentThread]);
+        }];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
@@ -191,5 +207,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) sd_imageTest {
+    UIImageView *iv = [UIImageView new];
+    [iv sd_setImageWithURL:nil placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+    }];
+}
 
 @end

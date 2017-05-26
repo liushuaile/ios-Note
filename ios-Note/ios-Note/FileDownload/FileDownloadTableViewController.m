@@ -34,7 +34,7 @@ static NSString * const cellIdentifier = @"cell";
 #pragma mark - Custom Accessors
 - (NSArray *)dataArray {
     if (_dataArray == nil) {
-        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking断点下载（支持离线）", @"使用NSURLSession断点下载（支持离线）", @"使用NSURLSession的block方法下载文件", @"使用NSURLSession的delegate方法下载文件", nil];
+        _dataArray = [NSArray arrayWithObjects:@"使用AFNetworking断点下载（支持离线）", @"使用NSURLSession断点下载（支持离线）", nil];
     }
     return _dataArray;
 }
@@ -42,7 +42,7 @@ static NSString * const cellIdentifier = @"cell";
 #pragma mark- Methods
 - (IBAction)redoSender:(id)sender {
     //清理下载文件
-    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"QQ_V5.4.0.dmg"];
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"test.mp4"];
     NSFileManager *FM = [NSFileManager defaultManager];
     BOOL b_exist = [FM fileExistsAtPath:path];
     if (b_exist) {
