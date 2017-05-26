@@ -61,7 +61,8 @@
 - (NSURLSessionDataTask *)downloadTask {
     if (!_downloadTask) {
         // 创建下载URL
-        NSURL *url = [NSURL URLWithString:@"http://dldir1.qq.com/qqfile/QQforMac/QQ_V5.4.0.dmg"];
+        //http://flv2.bn.netease.com/videolib3/1705/20/KcLSx8643/SD/KcLSx8643-mobile.mp4
+        NSURL *url = [NSURL URLWithString:@"http://flv2.bn.netease.com/videolib3/1705/20/KcLSx8643/SD/KcLSx8643-mobile.mp4"];
         
         // 2.创建request请求
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
