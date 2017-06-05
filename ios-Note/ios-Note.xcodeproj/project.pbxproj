@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A3387FE1ECB39CD00FA9DC4 /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3387FB1ECB39CD00FA9DC4 /* LimitInput.m */; };
-		5A3387FF1ECB39CD00FA9DC4 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3387FD1ECB39CD00FA9DC4 /* UIViewController+Tracking.m */; };
-		5A3388021ECB3A0300FA9DC4 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388011ECB3A0300FA9DC4 /* UIAlertController+Blocks.m */; };
-		5A3388051ECB3A8200FA9DC4 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */; };
+		5A05EF491EE530F600F966FE /* SLlibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF471EE530F600F966FE /* SLlibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A05EF4C1EE530F600F966FE /* SLlibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A05EF451EE530F600F966FE /* SLlibs.framework */; };
+		5A05EF4D1EE530F600F966FE /* SLlibs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A05EF451EE530F600F966FE /* SLlibs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A05EF5C1EE5311200F966FE /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A05EF511EE5311200F966FE /* Image.xcassets */; };
+		5A05EF5D1EE5311200F966FE /* LimitInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF521EE5311200F966FE /* LimitInput.h */; };
+		5A05EF5E1EE5311200F966FE /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A05EF531EE5311200F966FE /* LimitInput.m */; };
+		5A05EF5F1EE5311200F966FE /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF541EE5311200F966FE /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A05EF601EE5311200F966FE /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A05EF551EE5311200F966FE /* RSAEncryptor.m */; };
+		5A05EF611EE5311200F966FE /* Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF561EE5311200F966FE /* Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A05EF621EE5311200F966FE /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A05EF571EE5311200F966FE /* Tools.m */; };
+		5A05EF631EE5311200F966FE /* UIAlertController+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF581EE5311200F966FE /* UIAlertController+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A05EF641EE5311200F966FE /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A05EF591EE5311200F966FE /* UIAlertController+Blocks.m */; };
+		5A05EF651EE5311200F966FE /* UIViewController+Tracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05EF5A1EE5311200F966FE /* UIViewController+Tracking.h */; };
+		5A05EF661EE5311200F966FE /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A05EF5B1EE5311200F966FE /* UIViewController+Tracking.m */; };
 		5A3388071ECB3B1600FA9DC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5A3388061ECB3B1600FA9DC4 /* README.md */; };
-		5A3388301ECD1FF500FA9DC4 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A33882F1ECD1FF500FA9DC4 /* Tools.m */; };
 		5A541CEA1E9D31D600593F99 /* GCDMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CE71E9D31D600593F99 /* GCDMethods.m */; };
 		5A541CEB1E9D31D600593F99 /* GCDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CE91E9D31D600593F99 /* GCDTableViewController.m */; };
 		5A541D2F1E9D31E500593F99 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A541CEE1E9D31E500593F99 /* CopyViewController.m */; };
@@ -73,19 +82,47 @@
 		C321BB2804A3A580903231D4 /* libPods-ios-Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD6866C2788CEFE13D8DB2D /* libPods-ios-Note.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5A05EF4A1EE530F600F966FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB0A13E1E8504B000105D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A05EF441EE530F600F966FE;
+			remoteInfo = SLlibs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A05EF181EE5297600F966FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A05EF4D1EE530F600F966FE /* SLlibs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		357077015DA772438C9DC151 /* Pods-ios-Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-Note/Pods-ios-Note.debug.xcconfig"; sourceTree = "<group>"; };
-		5A3387FA1ECB39CD00FA9DC4 /* LimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitInput.h; sourceTree = "<group>"; };
-		5A3387FB1ECB39CD00FA9DC4 /* LimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitInput.m; sourceTree = "<group>"; };
-		5A3387FC1ECB39CD00FA9DC4 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
-		5A3387FD1ECB39CD00FA9DC4 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
-		5A3388001ECB3A0300FA9DC4 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
-		5A3388011ECB3A0300FA9DC4 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
-		5A3388031ECB3A8200FA9DC4 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
-		5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		5A05EF451EE530F600F966FE /* SLlibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLlibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A05EF471EE530F600F966FE /* SLlibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLlibs.h; sourceTree = "<group>"; };
+		5A05EF481EE530F600F966FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A05EF511EE5311200F966FE /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		5A05EF521EE5311200F966FE /* LimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitInput.h; sourceTree = "<group>"; };
+		5A05EF531EE5311200F966FE /* LimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitInput.m; sourceTree = "<group>"; };
+		5A05EF541EE5311200F966FE /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		5A05EF551EE5311200F966FE /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		5A05EF561EE5311200F966FE /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		5A05EF571EE5311200F966FE /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		5A05EF581EE5311200F966FE /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
+		5A05EF591EE5311200F966FE /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
+		5A05EF5A1EE5311200F966FE /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		5A05EF5B1EE5311200F966FE /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		5A3388061ECB3B1600FA9DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5A33882E1ECD1FF500FA9DC4 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		5A33882F1ECD1FF500FA9DC4 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		5A462D9A1E8A396E004139A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5A541CE61E9D31D600593F99 /* GCDMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMethods.h; sourceTree = "<group>"; };
 		5A541CE71E9D31D600593F99 /* GCDMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMethods.m; sourceTree = "<group>"; };
@@ -197,11 +234,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A05EF411EE530F600F966FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB0A1431E8504B000105D17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5ACF84551EBEB98100C771D1 /* CoreData.framework in Frameworks */,
+				5A05EF4C1EE530F600F966FE /* SLlibs.framework in Frameworks */,
 				C321BB2804A3A580903231D4 /* libPods-ios-Note.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,20 +254,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A05EF461EE530F600F966FE /* SLlibs */ = {
+			isa = PBXGroup;
+			children = (
+				5A05EF511EE5311200F966FE /* Image.xcassets */,
+				5A05EF521EE5311200F966FE /* LimitInput.h */,
+				5A05EF531EE5311200F966FE /* LimitInput.m */,
+				5A05EF541EE5311200F966FE /* RSAEncryptor.h */,
+				5A05EF551EE5311200F966FE /* RSAEncryptor.m */,
+				5A05EF561EE5311200F966FE /* Tools.h */,
+				5A05EF571EE5311200F966FE /* Tools.m */,
+				5A05EF581EE5311200F966FE /* UIAlertController+Blocks.h */,
+				5A05EF591EE5311200F966FE /* UIAlertController+Blocks.m */,
+				5A05EF5A1EE5311200F966FE /* UIViewController+Tracking.h */,
+				5A05EF5B1EE5311200F966FE /* UIViewController+Tracking.m */,
+				5A05EF471EE530F600F966FE /* SLlibs.h */,
+				5A05EF481EE530F600F966FE /* Info.plist */,
+			);
+			path = SLlibs;
+			sourceTree = "<group>";
+		};
 		5A3387F91ECB39CD00FA9DC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5A33882E1ECD1FF500FA9DC4 /* Tools.h */,
-				5A33882F1ECD1FF500FA9DC4 /* Tools.m */,
 				5A3388061ECB3B1600FA9DC4 /* README.md */,
-				5A3388031ECB3A8200FA9DC4 /* RSAEncryptor.h */,
-				5A3388041ECB3A8200FA9DC4 /* RSAEncryptor.m */,
-				5A3388001ECB3A0300FA9DC4 /* UIAlertController+Blocks.h */,
-				5A3388011ECB3A0300FA9DC4 /* UIAlertController+Blocks.m */,
-				5A3387FA1ECB39CD00FA9DC4 /* LimitInput.h */,
-				5A3387FB1ECB39CD00FA9DC4 /* LimitInput.m */,
-				5A3387FC1ECB39CD00FA9DC4 /* UIViewController+Tracking.h */,
-				5A3387FD1ECB39CD00FA9DC4 /* UIViewController+Tracking.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -485,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				5A541D661E9DC40000593F99 /* ios-Note */,
+				5A05EF461EE530F600F966FE /* SLlibs */,
 				5AB0A1471E8504B000105D17 /* Products */,
 				5A462D991E8A396E004139A6 /* Frameworks */,
 				F8D8FEAFD4DCE8ADDA6215D7 /* Pods */,
@@ -495,6 +551,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB0A1461E8504B000105D17 /* ios-Note.app */,
+				5A05EF451EE530F600F966FE /* SLlibs.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -518,7 +575,41 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5A05EF421EE530F600F966FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A05EF631EE5311200F966FE /* UIAlertController+Blocks.h in Headers */,
+				5A05EF491EE530F600F966FE /* SLlibs.h in Headers */,
+				5A05EF5F1EE5311200F966FE /* RSAEncryptor.h in Headers */,
+				5A05EF611EE5311200F966FE /* Tools.h in Headers */,
+				5A05EF651EE5311200F966FE /* UIViewController+Tracking.h in Headers */,
+				5A05EF5D1EE5311200F966FE /* LimitInput.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5A05EF441EE530F600F966FE /* SLlibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A05EF4E1EE530F600F966FE /* Build configuration list for PBXNativeTarget "SLlibs" */;
+			buildPhases = (
+				5A05EF401EE530F600F966FE /* Sources */,
+				5A05EF411EE530F600F966FE /* Frameworks */,
+				5A05EF421EE530F600F966FE /* Headers */,
+				5A05EF431EE530F600F966FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLlibs;
+			productName = SLlibs;
+			productReference = 5A05EF451EE530F600F966FE /* SLlibs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5AB0A1451E8504B000105D17 /* ios-Note */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AB0A15D1E8504B000105D17 /* Build configuration list for PBXNativeTarget "ios-Note" */;
@@ -529,10 +620,12 @@
 				5AB0A1441E8504B000105D17 /* Resources */,
 				DA65D14B04BAF5952EBE2647 /* [CP] Embed Pods Frameworks */,
 				05244DAD9F64CEF6B54E3335 /* [CP] Copy Pods Resources */,
+				5A05EF181EE5297600F966FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A05EF4B1EE530F600F966FE /* PBXTargetDependency */,
 			);
 			name = "ios-Note";
 			productName = Note;
@@ -548,6 +641,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Sam;
 				TargetAttributes = {
+					5A05EF441EE530F600F966FE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5P7X92RVXH;
+						ProvisioningStyle = Automatic;
+					};
 					5AB0A1451E8504B000105D17 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5P7X92RVXH;
@@ -572,11 +670,20 @@
 			projectRoot = "";
 			targets = (
 				5AB0A1451E8504B000105D17 /* ios-Note */,
+				5A05EF441EE530F600F966FE /* SLlibs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A05EF431EE530F600F966FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A05EF5C1EE5311200F966FE /* Image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB0A1441E8504B000105D17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,30 +759,37 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A05EF401EE530F600F966FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A05EF661EE5311200F966FE /* UIViewController+Tracking.m in Sources */,
+				5A05EF641EE5311200F966FE /* UIAlertController+Blocks.m in Sources */,
+				5A05EF621EE5311200F966FE /* Tools.m in Sources */,
+				5A05EF5E1EE5311200F966FE /* LimitInput.m in Sources */,
+				5A05EF601EE5311200F966FE /* RSAEncryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB0A1421E8504B000105D17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3388301ECD1FF500FA9DC4 /* Tools.m in Sources */,
 				5AA77A401EA9A09900052A77 /* CGContextObject.m in Sources */,
 				5A541DEF1E9DCCA900593F99 /* WaterFallLayout.m in Sources */,
 				5A77CB7E1ED7190D00EE95BC /* AsyncOperation.m in Sources */,
 				5A541D3A1E9D31E500593F99 /* Example1Controller.m in Sources */,
 				5A541DF71E9DF75700593F99 /* WFCollectionViewCell.m in Sources */,
-				5A3387FF1ECB39CD00FA9DC4 /* UIViewController+Tracking.m in Sources */,
 				5A541D3E1E9D31E500593F99 /* Example5Controller.m in Sources */,
-				5A3387FE1ECB39CD00FA9DC4 /* LimitInput.m in Sources */,
 				5AA77A411EA9A09900052A77 /* GradientColor.m in Sources */,
 				5A541D3C1E9D31E500593F99 /* Example3Controller.m in Sources */,
 				5A541D471E9D31E500593F99 /* RSAViewController.m in Sources */,
 				5A541E091E9DFBE700593F99 /* ASyncURLConnection.m in Sources */,
 				5AA77A421EA9A09900052A77 /* KView.m in Sources */,
 				5A541D631E9D325800593F99 /* main.m in Sources */,
-				5A3388021ECB3A0300FA9DC4 /* UIAlertController+Blocks.m in Sources */,
 				5A541E0A1E9DFBE700593F99 /* LSAlertController.m in Sources */,
 				5A541D311E9D31E500593F99 /* CoreDataTableViewController.m in Sources */,
 				5A541D481E9D31E500593F99 /* RunLoopViewController.m in Sources */,
-				5A3388051ECB3A8200FA9DC4 /* RSAEncryptor.m in Sources */,
 				5A541DF21E9DCD3300593F99 /* WFImage.m in Sources */,
 				5ABE13F51EBEBE61003A0A60 /* Model.xcdatamodeld in Sources */,
 				5A541D301E9D31E500593F99 /* CoreDataManager.m in Sources */,
@@ -705,6 +819,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A05EF4B1EE530F600F966FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A05EF441EE530F600F966FE /* SLlibs */;
+			targetProxy = 5A05EF4A1EE530F600F966FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A541D571E9D321900593F99 /* LaunchScreen.storyboard */ = {
@@ -740,6 +862,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5A05EF4F1EE530F600F966FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5P7X92RVXH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SLlibs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sl.liu.SLlibs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A05EF501EE530F600F966FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5P7X92RVXH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SLlibs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sl.liu.SLlibs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5AB0A15B1E8504B000105D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -871,6 +1041,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A05EF4E1EE530F600F966FE /* Build configuration list for PBXNativeTarget "SLlibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A05EF4F1EE530F600F966FE /* Debug */,
+				5A05EF501EE530F600F966FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5AB0A1411E8504B000105D17 /* Build configuration list for PBXProject "ios-Note" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

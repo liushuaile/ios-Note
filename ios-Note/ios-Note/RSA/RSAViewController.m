@@ -7,7 +7,6 @@
 //
 
 #import "RSAViewController.h"
-#import "RSAEncryptor.h"
 
 static NSString * const PUBLIC_KEY = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDVF76tE3Yi56CJfUDdPvKp3jH+"
 "jqmTtqOwR3JoPayvlNLFp3Pa9C+7SL17OhcP8wKogSoMrqt2x678WhglQTDu46fU"
@@ -31,31 +30,26 @@ static NSString * const PRIVATE_KEY = @"MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJe
 
 
 @interface RSAViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *button01;
+@property (weak, nonatomic) IBOutlet UIButton *button02;
 
 @end
 
 @implementation RSAViewController
 
+- (IBAction)click01:(id)sender {
+    [self rsaByDerFile];
+}
+- (IBAction)click02:(id)sender {
+    [self rsaByStringKey];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *btn01 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn01 showPlaceHolder];
-    btn01.backgroundColor = [UIColor orangeColor];
-    [btn01 addTarget:self action:@selector(rsaByDerFile) forControlEvents:UIControlEventTouchUpInside];
-    [btn01 setTitle:@"Der文件加密" forState:UIControlStateNormal];
-    [self.view addSubview:btn01];
-    
-    UIButton *btn02 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn02 showPlaceHolder];
-    btn02.backgroundColor = [UIColor orangeColor];
-    [btn02 addTarget:self action:@selector(rsaByStringKey) forControlEvents:UIControlEventTouchUpInside];
-    [btn02 setTitle:@"key字符串加密" forState:UIControlStateNormal];
-    [self.view addSubview:btn02];
-
-    
-    [btn01 mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.button01 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerX.equalTo(self.view.mas_centerX);
         //make.size.mas_equalTo(CGSizeMake(120, 44));
@@ -66,7 +60,7 @@ static NSString * const PRIVATE_KEY = @"MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJe
         
     }];
     
-    [btn02 mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.button02 mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerX.equalTo(self.view.mas_centerX);
         make.top.equalTo(self.view.mas_centerY).with.offset(+10);

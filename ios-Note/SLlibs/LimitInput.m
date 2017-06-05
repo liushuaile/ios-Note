@@ -29,10 +29,10 @@ IMPLEMENT_PROPERTY(UITextView)
 @implementation LimitInput
 
 
-+(void) load {
-    [super load];
-    [LimitInput sharedInstance];
-}
+//+(void) load {
+//    [super load];
+//    [LimitInput sharedInstance];
+//}
 
     
 +(LimitInput *) sharedInstance {

@@ -464,7 +464,6 @@ static NSData *base64_decode(NSString *str){
     return ret;
 }
 
-
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey{
     NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
     data = [RSAEncryptor decryptData:data privateKey:privKey];
